@@ -56,13 +56,21 @@
   </script>
   <!-- End Microsoft Clarity tracking code -->
 
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lora" rel="stylesheet" type="text/css">
-  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./smcccd-bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="./smcccd-theme.css">
-  <link rel="stylesheet" type="text/css" href="./new-styles.css">
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
 
   <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lora" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./new-styles.css">
+  <link rel="stylesheet" href="/theme/smcccd-2022/css/style.css?v=2">
+
 
   <style>
     main#content {
@@ -174,6 +182,14 @@
     footer .list-unstyled li {
       padding: 3px 0;
     }
+    .portal-header{
+      margin: 50px 0;
+    }
+
+    .portal-header h1, h2 {
+      color: #012147 !important;
+    }
+
   </style>
 </head>
 
@@ -187,261 +203,281 @@
   ></iframe>
 </noscript>
 
-<a href="#MainContent" class="sr-only">Skip to content</a>
+<a href="#MainContent" class="visually-hidden">Skip to content</a>
 
 <div class="wrapper">
-  <div id="Header">
-    <div class="top-bar" id="TopBar" data-toggle="clingify">
-      <div class="slidedown">
-        <a class="navbar-btn" data-toggle="jpanel-menu" data-target="#MainNavigation" href="#MainNavigation">
-          <span class="sr-only">Menu</span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </a>
-
-        <div class="container container-xl block">
-          <div class="pull-left">
-            <div class="btn-group pull-left">
-              <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-                Change Site&nbsp;&nbsp;
-                <i class="fa fa-caret-down"></i>
-              </button>
-
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="https://websmart.smccd.edu">
-                    <i class="fa fa-lg fa-gear"></i>&nbsp;&nbsp;
-                    WebSMART
-                  </a>
-                </li>
-                <li>
-                  <a href="https://smccd.instructure.com/">
-                    <i class="fa fa-lg fa-globe"></i>&nbsp;&nbsp;
-                    Canvas
-                  </a>
-                </li>
-                <li>
-                  <a href="https://my.smccd.edu">
-                    <i class="fa fa-lg fa-envelope"></i>&nbsp;&nbsp;
-                    My.SMCCD
-                  </a>
-                </li>
-                <li>
-                  <a href="https://smccd.edu/portal">
-                    <i class="fa fa-lg fa-columns"></i>&nbsp;&nbsp;
-                    Portal
-                  </a>
-                </li>
-                <li>
-                  <a href="https://webschedule.smccd.edu">
-                    <i class="fa fa-lg fa-table"></i>&nbsp;&nbsp;
-                    WebSchedule
-                  </a>
-                </li>
-                <li class="divider"></li>
-                <li class="li-csm">
-                  <a href="https://collegeofsanmateo.edu">
-                    <i class="fa fa-lg fa-university"></i>&nbsp;&nbsp;
-                    College of San Mateo
-                  </a>
-                </li>
-                <li class="li-can">
-                  <a href="https://canadacollege.edu">
-                    <i class="fa fa-lg fa-university"></i>&nbsp;&nbsp;
-                    Cañada College
-                  </a>
-                </li>
-                <li class="li-sky">
-                  <a href="https://skylinecollege.edu">
-                    <i class="fa fa-lg fa-university"></i>&nbsp;&nbsp;
-                    Skyline College
-                  </a>
-                </li>
-              </ul>
-            </div>
-
-            <div class="pull-left hidden-xs" style="margin-top: 3px; padding-left: 3px;">
-              | SMCCCD
-            </div>
-          </div>
-
-          <div class="pull-right">
-            <ul class="search-tools navbar-left">
-              <li>
-                <a href="http://directory.smccd.edu">
-                  <span class="sr-only">District Directory</span>
-                  <i class="fa fa-lg fa-user"></i>
-                </a>
-              </li>
-              <li>
-                <a href="//smccd.edu/search/azindex.php">
-                  <span class="sr-only">Site Index</span>
-                  <i class="fa fa-lg fa-sort-alpha-asc"></i>
-                </a>
-              </li>
-            </ul>
-
-            <div class="search-form navbar-right">
-              <form action="//smccd.edu/search/index.php" role="form" style="margin: 0; padding: 0;">
-                <input type="hidden" name="cx" value="001343176506729611594:dxf40qjualg">
-                <input type="hidden" name="cof" value="FORID:11">
-                <input type="hidden" name="ie" value="UTF-8">
-
-                <div class="input-group">
-                  <label class="sr-only" for="as_q">Search site using Google...</label>
-                  <input
-                    type="text"
-                    class="form-control input-sm"
-                    id="as_q"
-                    name="q"
-                    placeholder="Search site using Google..."
-                  >
-                  <span class="input-group-btn">
-                      <button class="btn btn-primary btn-sm" type="submit" name="submit">
-                        <span class="sr-only">Search</span>
-                        <i class="fa fa-search"></i>
-                      </button>
-                    </span>
-                </div>
-              </form>
-            </div>
-          </div>
-
-          <div class="clearfix"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="header header-inverse">
-      <div class="header-inner container container-xl">
-        <div class="row navbar-bar navbar-horizontal-lg">
-          <div class="smccd-logo">
-            <a class="text-hide container-logo-smccd" href="https://smccd.edu/" title="Home">
-              <img
-                class="logo-smccd"
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
-                alt="SMCCCD Logo"
-              >
-            </a>
-          </div>
-
-          <div class="block-nav">
-            <div class="navbar-collapse collapse" id="MainNavigation">
-              <form action="//smccd.edu/search/index.php" role="form" class="visible-xs navbar-left">
-                <input type="hidden" name="cx" value="001343176506729611594:dxf40qjualg">
-                <input type="hidden" name="cof" value="FORID:11">
-                <input type="hidden" name="ie" value="UTF-8">
-
-                <div class="input-group">
-                  <label class="sr-only" for="SearchSite">Search site</label>
-                  <input
-                    type="text"
-                    class="form-control input-sm"
-                    name="as_q"
-                    id="SearchSite"
-                    placeholder="Search site through Google..."
-                  >
-                  <span class="input-group-btn">
-                      <button class="btn btn-primary btn-sm" type="submit">
-                        <span class="sr-only">Search</span>
-                        <i class="fa fa-search"></i>
-                      </button>
-                    </span>
-                </div>
-              </form>
-
-              <ul class="nav nav-pills nav-mf">
-                <li><a href="https://websmart.smccd.edu">WebSMART</a></li>
-                <li><a href="https://webschedule.smccd.edu">WebSchedule</a></li>
-                <li><a href="https://smccd.instructure.com">Canvas</a></li>
-                <li><a href="https://smccd.edu/studenttutorials/">Support</a></li>
-                <li><a href="https://smccd.edu">SMCCCD Website</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe
+      src="https://www.googletagmanager.com/ns.html?id=GTM-KT3CBM3"
+      height="0"
+      width="0"
+      style="display: none; visibility: hidden"
+      title="Google Tag Manager">
+    </iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <div
     id="emergency"
     data-smccd-emergency
-    data-site-location="my-smccd-edu"
+    data-site-location="smccd-edu"
     data-url="https://emergency.smccd.info/wp-json/wp/v2/"
-    data-style="alert"
-    data-post-type='["notifications"]'
-    style="background-color: #fff; padding-top: 20px;"
-  ></div>
+    data-style="alert alert-dismissible fade show"
+    data-post-type='["notifications"]'>
+  </div>
 
   <div
     id="announcements"
+    style="background-color: #fff"
     data-smccd-notifications
-    data-site-location="my-smccd-edu"
+    data-site-location="smccd-edu"
     data-url="https://smccd.college.technology/wp-json/wp/v2/"
     data-style="alert"
-    data-post-type='["notifications"]'
-    style="background-color: #fff; padding-top: 20px;"
-  ></div>
+    data-post-type='["notifications"]'>
+  </div>
 
-  <section class="lead-section">
-    <div class="container container-xl">
-      <div class="container container-lg">
-        <!--
-        <div class="row">
-          <div class="alert alert-success">
-            <p class="text-left">
-              <i class="fa fa-info-circle" aria-hidden="true"></i>
-              Announcement (June 13, 2017 6pm) <br>
-              Between June 11-13<sup>th</sup>we experienced intermittent login issues with Canvas.
-              We believe that the issues have been resolved. We apologize for the inconvenience and
-              appreciate your patience.
-            </p>
+  <header id="head" class="primary-header">
+    <!-- Top Bar -->
+    <div class="top-bar">
+      <div class="top-bar__container container d-flex justify-content-between">
+        <div class="top-bar__item">
+          <div class="top-bar__item-dropdown">
+            <div class="btn-group">
+              <button
+                class="btn dropdown-toggle"
+                type="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Change Site
+              </button>
+
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="https://websmart.smccd.edu">WebSMART</a></li>
+                <li><a class="dropdown-item" href="/canvas">Canvas</a></li>
+                <li><a class="dropdown-item" href="https://my.smccd.edu">My.SMCCD</a></li>
+                <li><a class="dropdown-item" href="/portal">Portal</a></li>
+                <li><a class="dropdown-item" href="https://webschedule.smccd.edu">WebSchedule</a></li>
+
+                <li><hr class="dropdown-divider"></li>
+
+                <li class="dropdown-menu--colleges">
+                  <a class="dropdown-item color--blue" href="https://collegeofsanmateo.edu">
+                    College of San Mateo
+                  </a>
+                </li>
+
+                <li class="dropdown-menu--colleges">
+                  <a class="dropdown-item color--green" href="https://canadacollege.edu">
+                    Cañada College
+                  </a>
+                </li>
+
+                <li class="dropdown-menu--colleges">
+                  <a class="dropdown-item color--red" href="https://skylinecollege.edu">
+                    Skyline College
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="https://foundation.smccd.edu">
+                    SMCCC Foundation
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <span class="top-bar__item-dropdown-name">SMCCCD</span>
           </div>
         </div>
-        -->
 
-        <div class="row">
-          <div class="col-lg-6">
-            <h1 class="portal-title">Student Portal</h1>
-            <h2 class="portal-subtitle">
-              Web Services at Ca&ntilde;ada College, College of San Mateo, &amp; Skyline College.
-            </h2>
-
-            <div class="institutions">
-              <span class="middle-line">San Mateo County Community College District</span>
-
-              <div class="row">
-                <div class="col-xs-12 col-sm-4">
-                  <a href="http://canadacollege.edu">
-                    <img src="studentportal-update/images/CanadaLogo_bar_color.png" alt="Cañada College Logo">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-5">
-                  <a href="http://collegeofsanmateo.edu">
-                    <img src="studentportal-update/images/CSM_Logo_color.png" alt="CSM Logo">
-                  </a>
-                </div>
-                <div class="col-xs-12 col-sm-3">
-                  <a href="http://skylinecollege.edu">
-                    <img src="studentportal-update/images/Skyline_Logo_color.png" alt="Skyline College Logo">
-                  </a>
-                </div>
-              </div>
-            </div>
+        <div class="top-bar__item">
+          <div class="top-bar__item-user">
+            <a href="http://directory.smccd.edu/" aria-label="Search District Directory">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              <span class="visually-hidden">Search District Directory</span>
+            </a>
           </div>
 
-          <div class="col-md-12 col-lg-5 col-lg-offset-1 hidden-xs" style="padding-top: 30px;"></div>
+          <div class="top-bar__item-sort">
+            <a href="/search/azindex" aria-label="Search Site Index">
+              <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+              <span class="visually-hidden">Search Site Index</span>
+            </a>
+          </div>
+
+          <div class="top-bar__item-search">
+            <form style="margin: 0; padding: 0" role="form" action="/search/index.php">
+              <input name="cx" type="hidden" value="001343176506729611594:dxf40qjualg">
+              <input name="cof" type="hidden" value="FORID:11">
+              <input name="ie" type="hidden" value="UTF-8">
+
+              <div class="input-group">
+                <input
+                  id="as_q"
+                  class="form-control"
+                  name="q"
+                  type="text"
+                  placeholder="Search site using Google..."
+                  aria-label="Search site using Google"
+                  aria-describedby="button-addon2">
+
+                <button id="button-addon2" class="btn btn-outline-secondary" type="submit">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                  <span class="visually-hidden">Search</span>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+
+    <!-- Main Navigation -->
+    <nav class="sitenav navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img
+            src="https://smccd.edu/theme/smcccd-2022/images/SMCCCD_Horizontal_Blue.svg"
+            alt="SMCCCD San Mateo County Community College District">
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id="navbarNavDropdown" class="collapse navbar-collapse flex-grow-0">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                id="aboutUsNav"
+                class="nav-link dropdown-toggle"
+                role="button"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                About Us
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="aboutUsNav">
+                <li><a class="dropdown-item" href="/aboutus/index.php">District Overview</a></li>
+                <li><a class="dropdown-item" href="/aboutus/factbook.php">District Facts</a></li>
+                <li><a class="dropdown-item" href="/strategicplanning">Strategic Plan</a></li>
+                <li><a class="dropdown-item" href="/aboutus/open-book.php">SMCCCD Open Book</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                id="boardNav"
+                class="nav-link dropdown-toggle"
+                role="button"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Board of Trustees
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="boardNav">
+                <li><a class="dropdown-item" href="/boardoftrustees/members.php">Board Members</a></li>
+                <li><a class="dropdown-item" href="https://smccd.community.highbond.com/Portal/Default.aspx">Board Agenda</a></li>
+                <li><a class="dropdown-item" href="/boardoftrustees/agenda.php">Previous Board Agendas</a></li>
+                <li><a class="dropdown-item" href="/boardoftrustees/packet.php">Board Packet</a></li>
+                <li><a class="dropdown-item" href="/boardoftrustees/calendar.php">Board Calendar</a></li>
+                <li><a class="dropdown-item" href="/boardoftrustees/minutes.php">Board Minutes</a></li>
+                <li><a class="dropdown-item" href="/boardoftrustees/meetings.php">Board Meeting Videos</a></li>
+                <li><a class="dropdown-item" href="/boardoftrustees/policies.php">Board Policies and Procedures</a></li>
+                <li><a class="dropdown-item" href="/boardoftrustees/notice-hearing-by-trustee-area-elections.php">Trustee Areas and Elections</a></li>
+                <li><a class="dropdown-item" href="/boardoftrustees/statements.php">Board Statements</a></li>
+                <li><a class="dropdown-item" href="/boardoftrustees/contact-us.php">Contact Us</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                id="communityNav"
+                class="nav-link dropdown-toggle"
+                role="button"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Community
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-light dropdown-menu-lg-end" aria-labelledby="communityNav">
+                <li><a class="dropdown-item" href="https://cboc.smccd.edu/">Bond Oversight Committee</a></li>
+                <li><a class="dropdown-item" href="https://edthatworks.smccd.edu/">Community, Continuing and Corporate Education (CCCE)</a></li>
+                <li><a class="dropdown-item" href="/generalservices/doing-business-with-us.php">Doing Business with the District</a></li>
+                <li><a class="dropdown-item" href="/facstaffhousing">Employee Housing Programs</a></li>
+                <li><a class="dropdown-item" href="//foundation.smccd.edu">Foundation</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a
+                id="departmentsNav"
+                class="nav-link dropdown-toggle"
+                role="button"
+                href="#"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Departments
+              </a>
+
+              <ul class="dropdown-menu dropdown-menu-light dropdown-menu-lg-end" aria-labelledby="departmentsNav">
+                <li><a class="dropdown-item" href="/auxiliaryservices">Auxiliary Services</a></li>
+                <li><a class="dropdown-item" href="/chancellors-office/">Chancellor’s Office</a></li>
+                <li><a class="dropdown-item" href="/educationservices">Educational Services</a></li>
+                <li><a class="dropdown-item" href="/facilities">Facilities</a></li>
+                <li><a class="dropdown-item" href="/financialservices">Financial Services</a></li>
+                <li><a class="dropdown-item" href="/generalservices">General Services</a></li>
+                <li><a class="dropdown-item" href="/humanresources">Human Resources</a></li>
+                <li><a class="dropdown-item" href="//its.smccd.edu">Information Technology Services</a></li>
+                <li><a class="dropdown-item" href="//smccd.edu/international">International Education</a></li>
+                <li><a class="dropdown-item" href="/publicsafety">Public Safety</a></li>
+                <li><a class="dropdown-item" href="https://sites.google.com/my.smccd.edu/smcccdsustainability/home">Sustainability</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <main id="content">
     <div class="container container-xl">
       <div id="MainContent">
+
+        <section class="lead-section mt-4">
+              <div class="row ">
+                <div class="col-lg-6 portal-header">
+                  <h1 class="portal-title">Student Portal</h1>
+                  <h2 class="portal-subtitle">Web Services at Ca&ntilde;ada College, <br/> College of San Mateo, Skyline College.</h2>
+                  <div class="institutions"><div class="middle-line mb-3">San Mateo County Community College District</div>
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-4"><a href="http://canadacollege.edu"><img
+                        src="https://my.smccd.edu/images/CanadaLogo_bar_color.png" alt="Cañada College Logo"></a>
+                      </div>
+                      <div class="col-xs-12 col-sm-5"><a href="http://collegeofsanmateo.edu"><img
+                        src="https://my.smccd.edu/images/CSM_Logo_color.png" alt="CSM Logo"></a></div>
+                      <div class="col-xs-12 col-sm-3"><a href="http://skylinecollege.edu"><img
+                        src="https://my.smccd.edu/images/Skyline_Logo_color.png" alt="Skyline College Logo"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-5 col-lg-offset-1 hidden-xs" style="padding-top: 30px">
+                </div>
+              </div>
+        </section>
+
         <div class="row masonry-grid" data-js="isotope" data-item-selector=".widget-block" data-layout-type="fitRows">
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block csm sky can">
             <div class="widget-block-inner">
@@ -682,7 +718,8 @@
           <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
             <div class="widget-block-inner">
               <div class="widget-block-thumbnail">
-                <a href="https://smccd.edu/student-tutorials/office365/" title="Read More about Google Docs integration" tabindex="-1"
+                <a href="https://smccd.edu/student-tutorials/office365/" title="Read More about Google Docs integration"
+                   tabindex="-1"
                    aria-hidden="true">
                   <img src="https://my.smccd.edu/images/ms_office_logos.jpg" alt="Microsoft Office Suite logo">
                 </a>
