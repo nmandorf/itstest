@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en-us" class="no-js lt-ie9 lt-ie8 lt-ie7">
+<![endif]-->
+<!--[if IE 7]>
+<html lang="en-us" class="no-js lt-ie9 lt-ie8">
+<![endif]-->
+<!--[if IE 8]>
+<html lang="en-us" class="no-js lt-ie9">
+<![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en-us" class="no-js">
+<!--<![endif]-->
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My.smccd.edu student portal</title>
+
+  <!-- Google Tag Manager by BB, 6/21/2023 -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        "gtm.start": new Date().getTime(),
+        event: "gtm.js"
+      });
+
+      var f = d.getElementsByTagName(s)[0];
+      var j = d.createElement(s);
+      var dl = l != "dataLayer" ? "&l=" + l : "";
+
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-KT3CBM3");
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <!-- Microsoft Clarity tracking code by BB, 6/21/2023 -->
+  <script>
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () {
+        (c[a].q = c[a].q || []).push(arguments);
+      };
+
+      t = l.createElement(r);
+      t.async = 1;
+      t.src = "https://www.clarity.ms/tag/" + i;
+
+      y = l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "vffzyjmq60");
+  </script>
+  <!-- End Microsoft Clarity tracking code -->
+
+  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Lora" rel="stylesheet" type="text/css">
+  <link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./smcccd-bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./smcccd-theme.css">
+  <link rel="stylesheet" type="text/css" href="./new-styles.css">
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+
+  <style>
+    main#content {
+      display: block;
+    }
+
+    /* Keep portal cards aligned and equally tall within each row. */
+    .masonry-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+      height: auto !important;
+      position: static !important;
+    }
+
+    .masonry-grid::before,
+    .masonry-grid::after {
+      content: none;
+    }
+
+    .masonry-grid > .widget-block {
+      display: flex;
+      float: none;
+      margin-bottom: 30px;
+      position: static !important;
+      transform: none !important;
+    }
+
+    .widget-block-inner {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      color: #212529 !important;
+    }
+
+    .widget-block-thumbnail img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .widget-block-content {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      color: #212529 !important;
+    }
+
+    .widget-block-content > .widget-block-links {
+      margin-top: auto;
+    }
+
+    .widget-block h2,
+    .widget-block-title {
+      color: #212529 !important;
+      font-weight: 600;
+    }
+
+    .widget-block-excerpt {
+      flex: 1 1 auto;
+      color: #212529 !important;
+      margin-bottom: 16px;
+    }
+
+    .widget-block-title a {
+      color: #212529 !important;
+      text-decoration: none;
+    }
+
+    .widget-block-title a:hover {
+      color: #0056b3 !important;
+      text-decoration: underline;
+    }
+
+    .btn-success {
+      background-color: #3d8b3d !important;
+      border-color: #3d8b3d !important;
+    }
+
+    .btn-success:hover,
+    .btn-success:focus {
+      background-color: #2d6b2d !important;
+      border-color: #2d6b2d !important;
+    }
+
+    .footer-column,
+    .footer-column p,
+    .footer-column span {
+      color: #b0b0b0 !important;
+    }
+
+    footer.theme a {
+      color: #b0b0b0 !important;
+      text-decoration: underline;
+    }
+
+    footer.theme a:hover {
+      color: #ffffff !important;
+    }
+
+    .footer-theme-bottom,
+    .footer-theme-bottom span,
+    .footer-theme-bottom a {
+      color: #ababab !important;
+      font-size: 13px;
+    }
+
+    footer .list-unstyled li {
+      padding: 3px 0;
+    }
+  </style>
+</head>
+
+<body class="page alt" rel="SectionHome">
+<noscript>
+  <iframe
+    src="https://www.googletagmanager.com/ns.html?id=GTM-KT3CBM3"
+    height="0"
+    width="0"
+    style="display:none;visibility:hidden"
+  ></iframe>
+</noscript>
+
+<a href="#MainContent" class="sr-only">Skip to content</a>
+
+<div class="wrapper">
+  <div id="Header">
+    <div class="top-bar" id="TopBar" data-toggle="clingify">
+      <div class="slidedown">
+        <a class="navbar-btn" data-toggle="jpanel-menu" data-target="#MainNavigation" href="#MainNavigation">
+          <span class="sr-only">Menu</span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+
+        <div class="container container-xl block">
+          <div class="pull-left">
+            <div class="btn-group pull-left">
+              <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
+                Change Site&nbsp;&nbsp;
+                <i class="fa fa-caret-down"></i>
+              </button>
+
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="https://websmart.smccd.edu">
+                    <i class="fa fa-lg fa-gear"></i>&nbsp;&nbsp;
+                    WebSMART
+                  </a>
+                </li>
+                <li>
+                  <a href="https://smccd.instructure.com/">
+                    <i class="fa fa-lg fa-globe"></i>&nbsp;&nbsp;
+                    Canvas
+                  </a>
+                </li>
+                <li>
+                  <a href="https://my.smccd.edu">
+                    <i class="fa fa-lg fa-envelope"></i>&nbsp;&nbsp;
+                    My.SMCCD
+                  </a>
+                </li>
+                <li>
+                  <a href="https://smccd.edu/portal">
+                    <i class="fa fa-lg fa-columns"></i>&nbsp;&nbsp;
+                    Portal
+                  </a>
+                </li>
+                <li>
+                  <a href="https://webschedule.smccd.edu">
+                    <i class="fa fa-lg fa-table"></i>&nbsp;&nbsp;
+                    WebSchedule
+                  </a>
+                </li>
+                <li class="divider"></li>
+                <li class="li-csm">
+                  <a href="https://collegeofsanmateo.edu">
+                    <i class="fa fa-lg fa-university"></i>&nbsp;&nbsp;
+                    College of San Mateo
+                  </a>
+                </li>
+                <li class="li-can">
+                  <a href="https://canadacollege.edu">
+                    <i class="fa fa-lg fa-university"></i>&nbsp;&nbsp;
+                    Cañada College
+                  </a>
+                </li>
+                <li class="li-sky">
+                  <a href="https://skylinecollege.edu">
+                    <i class="fa fa-lg fa-university"></i>&nbsp;&nbsp;
+                    Skyline College
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="pull-left hidden-xs" style="margin-top: 3px; padding-left: 3px;">
+              | SMCCCD
+            </div>
+          </div>
+
+          <div class="pull-right">
+            <ul class="search-tools navbar-left">
+              <li>
+                <a href="http://directory.smccd.edu">
+                  <span class="sr-only">District Directory</span>
+                  <i class="fa fa-lg fa-user"></i>
+                </a>
+              </li>
+              <li>
+                <a href="//smccd.edu/search/azindex.php">
+                  <span class="sr-only">Site Index</span>
+                  <i class="fa fa-lg fa-sort-alpha-asc"></i>
+                </a>
+              </li>
+            </ul>
+
+            <div class="search-form navbar-right">
+              <form action="//smccd.edu/search/index.php" role="form" style="margin: 0; padding: 0;">
+                <input type="hidden" name="cx" value="001343176506729611594:dxf40qjualg">
+                <input type="hidden" name="cof" value="FORID:11">
+                <input type="hidden" name="ie" value="UTF-8">
+
+                <div class="input-group">
+                  <label class="sr-only" for="as_q">Search site using Google...</label>
+                  <input
+                    type="text"
+                    class="form-control input-sm"
+                    id="as_q"
+                    name="q"
+                    placeholder="Search site using Google..."
+                  >
+                  <span class="input-group-btn">
+                      <button class="btn btn-primary btn-sm" type="submit" name="submit">
+                        <span class="sr-only">Search</span>
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </span>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="header header-inverse">
+      <div class="header-inner container container-xl">
+        <div class="row navbar-bar navbar-horizontal-lg">
+          <div class="smccd-logo">
+            <a class="text-hide container-logo-smccd" href="https://smccd.edu/" title="Home">
+              <img
+                class="logo-smccd"
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="
+                alt="SMCCCD Logo"
+              >
+            </a>
+          </div>
+
+          <div class="block-nav">
+            <div class="navbar-collapse collapse" id="MainNavigation">
+              <form action="//smccd.edu/search/index.php" role="form" class="visible-xs navbar-left">
+                <input type="hidden" name="cx" value="001343176506729611594:dxf40qjualg">
+                <input type="hidden" name="cof" value="FORID:11">
+                <input type="hidden" name="ie" value="UTF-8">
+
+                <div class="input-group">
+                  <label class="sr-only" for="SearchSite">Search site</label>
+                  <input
+                    type="text"
+                    class="form-control input-sm"
+                    name="as_q"
+                    id="SearchSite"
+                    placeholder="Search site through Google..."
+                  >
+                  <span class="input-group-btn">
+                      <button class="btn btn-primary btn-sm" type="submit">
+                        <span class="sr-only">Search</span>
+                        <i class="fa fa-search"></i>
+                      </button>
+                    </span>
+                </div>
+              </form>
+
+              <ul class="nav nav-pills nav-mf">
+                <li><a href="https://websmart.smccd.edu">WebSMART</a></li>
+                <li><a href="https://webschedule.smccd.edu">WebSchedule</a></li>
+                <li><a href="https://smccd.instructure.com">Canvas</a></li>
+                <li><a href="https://smccd.edu/studenttutorials/">Support</a></li>
+                <li><a href="https://smccd.edu">SMCCCD Website</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    id="emergency"
+    data-smccd-emergency
+    data-site-location="my-smccd-edu"
+    data-url="https://emergency.smccd.info/wp-json/wp/v2/"
+    data-style="alert"
+    data-post-type='["notifications"]'
+    style="background-color: #fff; padding-top: 20px;"
+  ></div>
+
+  <div
+    id="announcements"
+    data-smccd-notifications
+    data-site-location="my-smccd-edu"
+    data-url="https://smccd.college.technology/wp-json/wp/v2/"
+    data-style="alert"
+    data-post-type='["notifications"]'
+    style="background-color: #fff; padding-top: 20px;"
+  ></div>
+
+  <section class="lead-section">
+    <div class="container container-xl">
+      <div class="container container-lg">
+        <!--
+        <div class="row">
+          <div class="alert alert-success">
+            <p class="text-left">
+              <i class="fa fa-info-circle" aria-hidden="true"></i>
+              Announcement (June 13, 2017 6pm) <br>
+              Between June 11-13<sup>th</sup>we experienced intermittent login issues with Canvas.
+              We believe that the issues have been resolved. We apologize for the inconvenience and
+              appreciate your patience.
+            </p>
+          </div>
+        </div>
+        -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="portal-title">Student Portal</h1>
+            <h2 class="portal-subtitle">
+              Web Services at Ca&ntilde;ada College, College of San Mateo, &amp; Skyline College.
+            </h2>
+
+            <div class="institutions">
+              <span class="middle-line">San Mateo County Community College District</span>
+
+              <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                  <a href="http://canadacollege.edu">
+                    <img src="studentportal-update/images/CanadaLogo_bar_color.png" alt="Cañada College Logo">
+                  </a>
+                </div>
+                <div class="col-xs-12 col-sm-5">
+                  <a href="http://collegeofsanmateo.edu">
+                    <img src="studentportal-update/images/CSM_Logo_color.png" alt="CSM Logo">
+                  </a>
+                </div>
+                <div class="col-xs-12 col-sm-3">
+                  <a href="http://skylinecollege.edu">
+                    <img src="studentportal-update/images/Skyline_Logo_color.png" alt="Skyline College Logo">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-5 col-lg-offset-1 hidden-xs" style="padding-top: 30px;"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main id="content">
+    <div class="container container-xl">
+      <div id="MainContent">
+        <div class="row masonry-grid" data-js="isotope" data-item-selector=".widget-block" data-layout-type="fitRows">
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block csm sky can">
+            <div class="widget-block-inner">
+              <div class="widget-block-thumbnail">
+                <a href="http://mail.my.smccd.edu/" tabindex="-1" aria-hidden="true">
+                  <img src="https://my.smccd.edu/images/student_email.jpg" title="Student Email" alt="Large email icon">
+                </a>
+              </div>
+
+              <div class="widget-block-content">
+                <header class="widget-block-header">
+                  <h2 class="widget-block-title">
+                    <a href="http://mail.my.smccd.edu/">Student Email</a>
+                  </h2>
+                </header>
+
+                <div class="widget-block-excerpt">
+                  All email sent from Ca&ntilde;ada, CSM and Skyline Colleges goes to your free District provided email
+                  address. Part of Google Apps for Education.
+                </div>
+
+                <div class="widget-block-links">
+                  <p>
+                    <a href="http://smccd.edu/studenttutorials/faqs.php" class="btn btn-primary"
+                       style="padding: 6px 7px; margin: 1px 0;">
+                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;
+                      FAQs
+                    </a>
+                    <a href="http://smccd.edu/studenttutorials/tutorials.php" class="btn btn btn-info"
+                       style="padding: 6px 7px; margin: 1px 0;">
+                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;
+                      Tutorials
+                    </a>
+                    <a href="http://smccd.edu/studenttutorials/index.php" class="btn btn btn-default"
+                       style="padding: 6px 7px; margin: 1px 0;">
+                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;
+                      Support
+                    </a>
+                    <!--
+                    <a href="https://reset.smccd.edu" class="btn btn btn-danger" style="padding: 6px 7px; margin: 1px 0;">
+                      <span class="fa fa-refresh"></span>
+                      Reset Password
+                    </a>
+                    -->
+                  </p>
+
+                  <div class="widget-block-links">
+                    <a href="http://mail.my.smccd.edu/" title="Sign In to Email" class="btn btn-block btn-success">
+                      Sign In to Email&nbsp;&nbsp;
+                      <span class="fa fa-lg fa-sign-in"></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
+            <div class="widget-block-inner">
+              <div class="widget-block-thumbnail">
+                <a href="https://websmart.smccd.edu" title="Visit WebSMART" tabindex="-1" aria-hidden="true">
+                  <img src="images/websmart.jpg" alt="WebSMART Screenshot">
+                </a>
+              </div>
+
+              <div class="widget-block-content">
+                <header class="widget-block-header">
+                  <h2 class="widget-block-title">
+                    <a href="https://websmart.smccd.edu" title="Visit WebSMART">WebSMART</a>
+                  </h2>
+                </header>
+
+                <div class="widget-block-excerpt">
+                  A web resource for viewing college data. Students can register for classes, download transcripts,
+                  apply for financial aid and much more!
+                </div>
+
+                <div class="widget-block-links">
+                  <a href="https://websmart.smccd.edu" title="Visit WebSMART" class="btn btn-block btn-primary">
+                    Visit WebSMART&nbsp;&nbsp;
+                    <span class="fa fa-angle-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
+            <div class="widget-block-inner">
+              <div class="widget-block-thumbnail">
+                <a href="https://webschedule.smccd.edu" title="#" tabindex="-1" aria-hidden="true">
+                  <img src="images/webschedule.jpg" alt="WebSchedule Screenshot">
+                </a>
+              </div>
+
+              <div class="widget-block-content">
+                <header class="widget-block-header">
+                  <h2 class="widget-block-title">
+                    <a href="https://webschedule.smccd.edu" title="Find classes in WebSchedule">WebSchedule</a>
+                  </h2>
+                </header>
+
+                <div class="widget-block-excerpt">
+                  Search through our schedule of college courses and sign up to be notified when we post the latest
+                  semester of classes.
+                </div>
+
+                <div class="widget-block-links">
+                  <a href="https://webschedule.smccd.edu" title="Find classes in WebSchedule"
+                     class="btn btn-block btn-primary">
+                    Find classes&nbsp;&nbsp;
+                    <span class="fa fa-angle-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
+            <div class="widget-block-inner">
+              <div class="widget-block-thumbnail">
+                <a href="http://smccd.instructure.com/" title="Visit Canvas" tabindex="-1" aria-hidden="true">
+                  <img src="https://my.smccd.edu/images/canvas.png" alt="Canvas Logo">
+                </a>
+              </div>
+
+              <div class="widget-block-content">
+                <header class="widget-block-header">
+                  <h2 class="widget-block-title">
+                    <a href="http://smccd.instructure.com/">Canvas</a>
+                  </h2>
+                </header>
+
+                <div class="widget-block-excerpt">
+                  Learn online courses and access your course materials remotely from a new online learning system.
+                </div>
+
+                <div class="widget-block-links">
+                  <a href="http://smccd.instructure.com/" title="Read More" class="btn btn-block btn-primary">
+                    Visit Canvas&nbsp;&nbsp;
+                    <span class="fa fa-angle-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
+            <div class="widget-block-inner">
+              <div class="widget-block-thumbnail">
+                <a href="https://www.smccd.edu/alertu/" title="AlertU" tabindex="-1" aria-hidden="true">
+                  <img src="images/alertu2.jpg" alt="AlertU Website Screenshot">
+                </a>
+              </div>
+
+              <div class="widget-block-content">
+                <header class="widget-block-header">
+                  <h2 class="widget-block-title">
+                    <a href="https://www.smccd.edu/alertu/">AlertU</a>
+                  </h2>
+                </header>
+
+                <div class="widget-block-excerpt">
+                  AlertU enables District Public Safety to send emergency information by text messages to cell phones
+                  on a FREE subscription basis.
+                </div>
+
+                <div class="widget-block-links">
+                  <a href="https://www.smccd.edu/alertu/" class="btn btn-block btn-primary">
+                    Visit AlertU&nbsp;&nbsp;
+                    <span class="fa fa-angle-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
+            <div class="widget-block-inner">
+              <div class="widget-block-thumbnail">
+                <a href="https://smccd.edu/doorcard" title="Find Office Hours" tabindex="-1" aria-hidden="true">
+                  <img src="https://my.smccd.edu/images/doorcard.jpg" alt="Doorcard Logo">
+                </a>
+              </div>
+
+              <div class="widget-block-content">
+                <header class="widget-block-header">
+                  <h2 class="widget-block-title">
+                    <a href="https://smccd.edu/doorcard">Faculty Office Hours</a>
+                  </h2>
+                </header>
+
+                <div class="widget-block-excerpt">
+                  Find out when your instructor is available for one-on-one assistance.
+                </div>
+
+                <div class="widget-block-links">
+                  <a href="https://smccd.edu/doorcard" title="Find Office Hours" class="btn btn-block btn-primary">
+                    Find Office Hours&nbsp;&nbsp;
+                    <span class="fa fa-angle-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
+            <div class="widget-block-inner">
+              <div class="widget-block-thumbnail">
+                <a href="http://drive.google.com/" title="Read More about Google Docs integration" tabindex="-1"
+                   aria-hidden="true">
+                  <img src="https://my.smccd.edu/images/google-apps.jpg" alt="Google Docs logo">
+                </a>
+              </div>
+
+              <div class="widget-block-content">
+                <header class="widget-block-header">
+                  <h2 class="widget-block-title">
+                    <a href="http://mail.my.smccd.edu/" title="Read More about Google Docs integration">Google Apps</a>
+                  </h2>
+                </header>
+
+                <div class="widget-block-excerpt">
+                  Allows you to create documents, forms, spreadsheets and presentations without needing MS Office.
+                </div>
+
+                <div class="widget-block-links">
+                  <a href="http://drive.google.com/" title="Read More about Google Docs integration"
+                     class="btn btn-block btn-primary">
+                    Read More about Google Apps&nbsp;&nbsp;
+                    <span class="fa fa-angle-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
+            <div class="widget-block-inner">
+              <div class="widget-block-thumbnail">
+                <a href="https://smccd.edu/student-tutorials/office365/" title="Read More about Google Docs integration" tabindex="-1"
+                   aria-hidden="true">
+                  <img src="https://my.smccd.edu/images/ms_office_logos.jpg" alt="Microsoft Office Suite logo">
+                </a>
+              </div>
+
+              <div class="widget-block-content">
+                <header class="widget-block-header">
+                  <h2 class="widget-block-title">
+                    <a
+                      href="https://smccd.edu/student-tutorials/office365/"
+                      title="Read More about free Microsoft Office for students"
+                      target="_blank"
+                    >Microsoft Office for free</a>
+                  </h2>
+                </header>
+
+                <div class="widget-block-excerpt">
+                  Microsoft offers a <strong>free copy of Microsoft Office </strong>to students.
+                  <p style="margin-top: 8px;">
+                    Note: Microsoft automatically removes all files stored in your EDU O365 or OneDrive if you are no
+                    longer enrolled. We strongly recommend backing up any files separately.
+                  </p>
+                </div>
+
+                <div class="widget-block-links">
+                  <a
+                    href="https://smccd.edu/student-tutorials/office365/"
+                    class="btn btn-block btn-primary"
+                    title="Microsoft office for students sign up"
+                    target="_blank"
+                  >
+                    Sign in Instructions&nbsp;&nbsp;
+                    <span class="fa fa-angle-right"></span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ouc:div label="footer" group="GroupAdmin" button="787" break="break" path="/includes/footer-default.php" -->
+    <!-- /ouc:div -->
+
+    <footer class="theme theme-inverse">
+      <div class="footer-theme-top">
+        <div class="container container-xl">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="footer-column">
+                <h3>San Mateo County CCD</h3>
+                <p>
+                  <a href="//smccd.edu">SMCCCD</a> are a three College District located between San Francisco and the
+                  Silicon Valley. Our Colleges serve more than 40, 000 students each year and offer the first two
+                  years of instruction in a wide variety of transfer programs as well as more than 90
+                  vocational-technical programs.
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <div class="footer-column">
+                <h3>Contact</h3>
+                <p>
+                  <i class="fa fa-map-marker"></i>&nbsp;&nbsp;
+                  3401 CSM Drive,
+                  <br>&nbsp;&nbsp;&nbsp;&nbsp;
+                  San Mateo, CA 94402 USA
+                  <br>
+                  <i class="fa fa-phone"></i>
+                  <span>&nbsp;&nbsp;(650) 574-6550</span>
+                  <br>
+                  <i class="fa fa-envelope-o"></i>&nbsp;&nbsp;
+                  <a href="mailto:webmaster@smccd.edu">webmaster@smccd.edu</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+              <h3>smccd.edu</h3>
+
+              <div class="footer-column">
+                <ul class="list-unstyled">
+                  <li>
+                    <a href="//smccd.edu/accounts/smccd/">
+                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href="//smccd.edu/boardoftrustees/">
+                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
+                      Board of Trustees
+                    </a>
+                  </li>
+                  <li>
+                    <a href="//smccd.edu/departments/">
+                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
+                      Departments
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://jobs.smccd.edu">
+                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
+                      Employment
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://foundation.smccd.edu">
+                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
+                      Foundation
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://smccd.edu/titleix">
+                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
+                      Title IX
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://smccd.edu/accessibility">
+                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
+                      Accessibility
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://smccd.edu/accounts/smccd/aboutus/contactus.shtml">
+                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
+                      Contact
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-theme-bottom copyright-details">
+        <div class="container container-xl">
+            <span>
+              Copyright &copy; 2026<a href="http://www.smccd.edu" target="_blank" rel="noopener">SMCCCD</a>&mdash;
+              All rights reserved.
+            </span>
+        </div>
+      </div>
+    </footer>
+  </main>
+</div>
+
+<script>
+  var $buoop = {
+    vs: {
+      i: 9,
+      f: 15,
+      o: 10.6,
+      s: 4,
+      n: 9
+    },
+    newwindow: true
+  };
+
+  $buoop.ol = window.onload;
+
+  window.onload = function () {
+    try {
+      if ($buoop.ol) {
+        $buoop.ol();
+      }
+    } catch (e) {
+    }
+
+    var e = document.createElement("script");
+    e.setAttribute("type", "text/javascript");
+    e.setAttribute("src", "//smccd.edu/theme/smcccd/plugins/browser-update-banner/js/update.js");
+    document.body.appendChild(e);
+  };
+</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="//smccd.edu/theme/smccd/bundle.js"></script>
+<script src="//smccd.edu/theme/smccd/smccd-notice.js?v=1.2"></script>
+<script src="//smccd.edu/theme/smccd/smccd-emergency.js"></script>
+</body>
+
+</html>
