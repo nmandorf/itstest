@@ -147,8 +147,8 @@
     }
 
     .btn-success {
-      background-color: #3d8b3d !important;
-      border-color: #3d8b3d !important;
+      background-color: #388038 !important;
+      border-color: #388038 !important;
     }
 
     .btn-success:hover,
@@ -182,7 +182,8 @@
     footer .list-unstyled li {
       padding: 3px 0;
     }
-    .portal-header{
+
+    .portal-header {
       margin: 50px 0;
     }
 
@@ -190,6 +191,57 @@
       color: #012147 !important;
     }
 
+    .gradiant-animation {
+      position: relative;
+      overflow: hidden;
+
+      background: linear-gradient(
+        135deg,
+        rgb(1, 33, 71) 0%,
+        rgb(239, 248, 255) 50%,
+        rgb(1, 33, 71) 100%
+      );
+
+      background-size: 220% 220%;
+      animation: professionalGradientShift 20s ease-in-out infinite;
+    }
+
+    .gradiant-animation::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      height: 100%;
+      pointer-events: none;
+
+      background: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, .1) 0%,
+        #ffffff 100%
+      );
+    }
+
+    @keyframes professionalGradientShift {
+      0% {
+        background-position: 0 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0 50%;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .gradiant-animation {
+        animation: none;
+      }
+    }
   </style>
 </head>
 
@@ -259,7 +311,9 @@
                 <li><a class="dropdown-item" href="/portal">Portal</a></li>
                 <li><a class="dropdown-item" href="https://webschedule.smccd.edu">WebSchedule</a></li>
 
-                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
 
                 <li class="dropdown-menu--colleges">
                   <a class="dropdown-item color--blue" href="https://collegeofsanmateo.edu">
@@ -387,14 +441,16 @@
 
               <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="boardNav">
                 <li><a class="dropdown-item" href="/boardoftrustees/members.php">Board Members</a></li>
-                <li><a class="dropdown-item" href="https://smccd.community.highbond.com/Portal/Default.aspx">Board Agenda</a></li>
+                <li><a class="dropdown-item" href="https://smccd.community.highbond.com/Portal/Default.aspx">Board
+                  Agenda</a></li>
                 <li><a class="dropdown-item" href="/boardoftrustees/agenda.php">Previous Board Agendas</a></li>
                 <li><a class="dropdown-item" href="/boardoftrustees/packet.php">Board Packet</a></li>
                 <li><a class="dropdown-item" href="/boardoftrustees/calendar.php">Board Calendar</a></li>
                 <li><a class="dropdown-item" href="/boardoftrustees/minutes.php">Board Minutes</a></li>
                 <li><a class="dropdown-item" href="/boardoftrustees/meetings.php">Board Meeting Videos</a></li>
                 <li><a class="dropdown-item" href="/boardoftrustees/policies.php">Board Policies and Procedures</a></li>
-                <li><a class="dropdown-item" href="/boardoftrustees/notice-hearing-by-trustee-area-elections.php">Trustee Areas and Elections</a></li>
+                <li><a class="dropdown-item" href="/boardoftrustees/notice-hearing-by-trustee-area-elections.php">Trustee
+                  Areas and Elections</a></li>
                 <li><a class="dropdown-item" href="/boardoftrustees/statements.php">Board Statements</a></li>
                 <li><a class="dropdown-item" href="/boardoftrustees/contact-us.php">Contact Us</a></li>
               </ul>
@@ -413,8 +469,10 @@
 
               <ul class="dropdown-menu dropdown-menu-light dropdown-menu-lg-end" aria-labelledby="communityNav">
                 <li><a class="dropdown-item" href="https://cboc.smccd.edu/">Bond Oversight Committee</a></li>
-                <li><a class="dropdown-item" href="https://edthatworks.smccd.edu/">Community, Continuing and Corporate Education (CCCE)</a></li>
-                <li><a class="dropdown-item" href="/generalservices/doing-business-with-us.php">Doing Business with the District</a></li>
+                <li><a class="dropdown-item" href="https://edthatworks.smccd.edu/">Community, Continuing and Corporate
+                  Education (CCCE)</a></li>
+                <li><a class="dropdown-item" href="/generalservices/doing-business-with-us.php">Doing Business with the
+                  District</a></li>
                 <li><a class="dropdown-item" href="/facstaffhousing">Employee Housing Programs</a></li>
                 <li><a class="dropdown-item" href="//foundation.smccd.edu">Foundation</a></li>
               </ul>
@@ -442,7 +500,8 @@
                 <li><a class="dropdown-item" href="//its.smccd.edu">Information Technology Services</a></li>
                 <li><a class="dropdown-item" href="//smccd.edu/international">International Education</a></li>
                 <li><a class="dropdown-item" href="/publicsafety">Public Safety</a></li>
-                <li><a class="dropdown-item" href="https://sites.google.com/my.smccd.edu/smcccdsustainability/home">Sustainability</a></li>
+                <li><a class="dropdown-item" href="https://sites.google.com/my.smccd.edu/smcccdsustainability/home">Sustainability</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -451,31 +510,35 @@
     </nav>
   </header>
 
+  <div style="position: absolute; height: 411px; width: 100%; z-index: -1" class="gradiant-animation"></div>
+
   <main id="content">
     <div class="container container-xl">
       <div id="MainContent">
 
         <section class="lead-section mt-4">
-              <div class="row ">
-                <div class="col-lg-6 portal-header">
-                  <h1 class="portal-title">Student Portal</h1>
-                  <h2 class="portal-subtitle">Web Services at Ca&ntilde;ada College, <br/> College of San Mateo, Skyline College.</h2>
-                  <div class="institutions"><div class="middle-line mb-3">San Mateo County Community College District</div>
-                    <div class="row">
-                      <div class="col-xs-12 col-sm-4"><a href="http://canadacollege.edu"><img
-                        src="https://my.smccd.edu/images/CanadaLogo_bar_color.png" alt="Cañada College Logo"></a>
-                      </div>
-                      <div class="col-xs-12 col-sm-5"><a href="http://collegeofsanmateo.edu"><img
-                        src="https://my.smccd.edu/images/CSM_Logo_color.png" alt="CSM Logo"></a></div>
-                      <div class="col-xs-12 col-sm-3"><a href="http://skylinecollege.edu"><img
-                        src="https://my.smccd.edu/images/Skyline_Logo_color.png" alt="Skyline College Logo"></a>
-                      </div>
-                    </div>
+          <div class="row ">
+            <div class="col-lg-6 portal-header">
+              <h1 class="portal-title">Student Portal</h1>
+              <h2 class="portal-subtitle">Web Services at Ca&ntilde;ada College, <br/> College of San Mateo, Skyline
+                College.</h2>
+              <div class="institutions">
+                <div class="middle-line mb-3">San Mateo County Community College District</div>
+                <div class="row align-items-center">
+                  <div class="col-xs-12 col-sm-4"><a href="http://canadacollege.edu"><img
+                    src="https://my.smccd.edu/images/CanadaLogo_bar_color.png" alt="Cañada College Logo"></a>
+                  </div>
+                  <div class="col-xs-12 col-sm-5"><a href="http://collegeofsanmateo.edu"><img
+                    src="https://my.smccd.edu/images/CSM_Logo_color.png" alt="CSM Logo"></a></div>
+                  <div class="col-xs-12 col-sm-3"><a href="http://skylinecollege.edu"><img
+                    src="https://my.smccd.edu/images/Skyline_Logo_color.png" alt="Skyline College Logo"></a>
                   </div>
                 </div>
-                <div class="col-md-12 col-lg-5 col-lg-offset-1 hidden-xs" style="padding-top: 30px">
-                </div>
               </div>
+            </div>
+            <div class="col-md-12 col-lg-5 col-lg-offset-1 hidden-xs" style="padding-top: 30px">
+            </div>
+          </div>
         </section>
 
         <div class="row masonry-grid" data-js="isotope" data-item-selector=".widget-block" data-layout-type="fitRows">
@@ -500,29 +563,29 @@
                 </div>
 
                 <div class="widget-block-links">
-                  <p>
-                    <a href="http://smccd.edu/studenttutorials/faqs.php" class="btn btn-primary"
-                       style="padding: 6px 7px; margin: 1px 0;">
-                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;
-                      FAQs
-                    </a>
-                    <a href="http://smccd.edu/studenttutorials/tutorials.php" class="btn btn btn-info"
-                       style="padding: 6px 7px; margin: 1px 0;">
-                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;
-                      Tutorials
-                    </a>
-                    <a href="http://smccd.edu/studenttutorials/index.php" class="btn btn btn-default"
-                       style="padding: 6px 7px; margin: 1px 0;">
-                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;
-                      Support
-                    </a>
-                    <!--
-                    <a href="https://reset.smccd.edu" class="btn btn btn-danger" style="padding: 6px 7px; margin: 1px 0;">
-                      <span class="fa fa-refresh"></span>
-                      Reset Password
-                    </a>
-                    -->
-                  </p>
+<!--                  <p>-->
+<!--                    <a href="http://smccd.edu/studenttutorials/faqs.php" class="btn btn-primary"-->
+<!--                       style="padding: 6px 7px; margin: 1px 0;">-->
+<!--                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;-->
+<!--                      FAQs-->
+<!--                    </a>-->
+<!--                    <a href="http://smccd.edu/studenttutorials/tutorials.php" class="btn btn btn-info"-->
+<!--                       style="padding: 6px 7px; margin: 1px 0;">-->
+<!--                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;-->
+<!--                      Tutorials-->
+<!--                    </a>-->
+<!--                    <a href="http://smccd.edu/studenttutorials/index.php" class="btn btn btn-default"-->
+<!--                       style="padding: 6px 7px; margin: 1px 0;">-->
+<!--                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;-->
+<!--                      Support-->
+<!--                    </a>-->
+<!--                    &lt;!&ndash;-->
+<!--                    <a href="https://reset.smccd.edu" class="btn btn btn-danger" style="padding: 6px 7px; margin: 1px 0;">-->
+<!--                      <span class="fa fa-refresh"></span>-->
+<!--                      Reset Password-->
+<!--                    </a>-->
+<!--                    &ndash;&gt;-->
+<!--                  </p>-->
 
                   <div class="widget-block-links">
                     <a href="http://mail.my.smccd.edu/" title="Sign In to Email" class="btn btn-block btn-success">
@@ -765,110 +828,57 @@
     <!-- ouc:div label="footer" group="GroupAdmin" button="787" break="break" path="/includes/footer-default.php" -->
     <!-- /ouc:div -->
 
-    <footer class="theme theme-inverse">
-      <div class="footer-theme-top">
-        <div class="container container-xl">
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="footer-column">
-                <h3>San Mateo County CCD</h3>
-                <p>
-                  <a href="//smccd.edu">SMCCCD</a> are a three College District located between San Francisco and the
-                  Silicon Valley. Our Colleges serve more than 40, 000 students each year and offer the first two
-                  years of instruction in a wide variety of transfer programs as well as more than 90
-                  vocational-technical programs.
-                </p>
-              </div>
+  </main>
+
+  <footer class="theme theme-inverse mt-5">
+    <div class="footer-theme-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <div class="footer-column">
+              <h3>San Mateo County Community College District</h3>
+              <p>The SMCCCD is a three-college district located between San Francisco and San Jose in the Silicon
+                Valley. Our Colleges serve nearly 20,000 students each year and offer the first two years of instruction
+                in a wide variety of degree and transfer programs, as well as vocational-technical programs.</p>
             </div>
-
-            <div class="col-sm-3">
-              <div class="footer-column">
-                <h3>Contact</h3>
-                <p>
-                  <i class="fa fa-map-marker"></i>&nbsp;&nbsp;
-                  3401 CSM Drive,
-                  <br>&nbsp;&nbsp;&nbsp;&nbsp;
-                  San Mateo, CA 94402 USA
-                  <br>
-                  <i class="fa fa-phone"></i>
-                  <span>&nbsp;&nbsp;(650) 574-6550</span>
-                  <br>
-                  <i class="fa fa-envelope-o"></i>&nbsp;&nbsp;
-                  <a href="mailto:webmaster@smccd.edu">webmaster@smccd.edu</a>
-                </p>
-              </div>
+          </div>
+          <div class="col-md-12 col-lg-3">
+            <div class="footer-column">
+              <h3>Contact</h3>
+              <address style="margin-bottom: 0px;"><strong>District Office</strong></address>
+              <span><span>3401 CSM Drive<br/></span></span>
+              <div class=""><span><span>San Mateo, CA 94402&nbsp; USA</span></span></div>
+              <div class=""><span>(650) 574-6550</span></div>
+              <div class=""><span>TTY call 711 or visit&nbsp;<a
+                href="https://caconnect.org/relay/">CA Relay Services</a> </span><br/><a
+                href="mailto:webmaster@smccd.edu">webmaster@smccd.edu</a></div>
             </div>
-
-            <div class="col-sm-3">
-              <h3>smccd.edu</h3>
-
-              <div class="footer-column">
-                <ul class="list-unstyled">
-                  <li>
-                    <a href="//smccd.edu/accounts/smccd/">
-                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
-                      Home
-                    </a>
-                  </li>
-                  <li>
-                    <a href="//smccd.edu/boardoftrustees/">
-                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
-                      Board of Trustees
-                    </a>
-                  </li>
-                  <li>
-                    <a href="//smccd.edu/departments/">
-                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
-                      Departments
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://jobs.smccd.edu">
-                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
-                      Employment
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://foundation.smccd.edu">
-                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
-                      Foundation
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://smccd.edu/titleix">
-                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
-                      Title IX
-                    </a>
-                  </li>
-                  <li>
-                    <a href="http://smccd.edu/accessibility">
-                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
-                      Accessibility
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://smccd.edu/accounts/smccd/aboutus/contactus.shtml">
-                      <span class="fa fa-angle-right"></span>&nbsp;&nbsp;
-                      Contact
-                    </a>
-                  </li>
-                </ul>
-              </div>
+          </div>
+          <div class="col-lg-3 col-md-12">
+            <h3>smccd.edu</h3>
+            <div class="footer-column">
+              <ul class="list-unstyled">
+                <li><a href="/">Home</a></li>
+                <li><a href="/departments/">Departments</a></li>
+                <li><a href="https://jobs.smccd.edu/">Employment</a></li>
+                <li><a href="https://www.smccd.edu/titleix">Title IX</a></li>
+                <li><a href="https://www.smccd.edu/accessibility">Accessibility</a></li>
+                <li><a href="/whistleblower/index.php">Report Fraud</a></li>
+                <li><a href="/aboutus/contactus.php">Contact</a></li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <section class="footer-theme-bottom copyright-details" aria-label="Copyright Info">
+      <div class="container"><span>Copyright <a
+        href="https://a.cms.omniupdate.com/11/?skin=oucampus&amp;account=sanmateo&amp;site=smccd-edu-prod&amp;action=de&amp;path=/index.pcf">©</a> <a
+        href="http://www.smccd.edu" target="blank">SMCCCD</a> — All rights reserved.</span></div>
+    </section>
+  </footer>
 
-      <div class="footer-theme-bottom copyright-details">
-        <div class="container container-xl">
-            <span>
-              Copyright &copy; 2026<a href="http://www.smccd.edu" target="_blank" rel="noopener">SMCCCD</a>&mdash;
-              All rights reserved.
-            </span>
-        </div>
-      </div>
-    </footer>
-  </main>
+
 </div>
 
 <script>
