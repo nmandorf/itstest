@@ -1,3 +1,24 @@
+.circle{
+  background-color: #012147;
+  color: white;
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.login-box{
+  border-radius: 12px;
+  box-shadow: 1px 1px 15px rgba(1, 33, 71, 0.37);
+  padding: 24px;
+}
+
+.sub-btn{
+  border-radius: 8px;
+  box-shadow: 1px 1px 15px rgba(1, 33, 71, 0.37);
+  padding: 12px 24px;
+}
 .masonry-grid {
   margin-top: 12px;
 }
