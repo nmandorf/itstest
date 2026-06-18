@@ -81,11 +81,10 @@
       margin-top: auto;
     }
 
-    .widget-block h2,{
+    .widget-block h2, {
       color: #212529 !important;
       font-weight: 600;
     }
-
 
 
     .widget-block-title a {
@@ -126,16 +125,16 @@
     }
 
 
-
     .portal-header h1, h2 {
       color: #012147 !important;
     }
 
     .sub-btn {
-      border: 2px solid #012147;
-      border-radius: 12px;
+      border: 1px solid rgba(1, 33, 71, 0.22);
+      border-radius: 8px;
+      box-shadow: 1px 1px 15px rgba(1, 33, 71, 0.37);
       padding: 12px 16px;
-      font-weight: 600;
+      font-weight: 400;
       color: #012147;
     }
   </style>
@@ -408,67 +407,79 @@
   <main id="content">
     <div class="container container-xl">
       <div id="MainContent">
-
+        <!--Add boxes around the info for seperation-->
+        <!--gradiant is a little in the way-->
 
         <div class="col-4 my-5">
-          <img src="images/Canvas_color_web.png">
+          <img src="images/Canvas_color_web.png" alt="Canvas Logo" class="w-100">
         </div>
 
-        <div class="login-box" >
-          <div class="mb-4" >
+        <div class="login-box p-3 p-md-5">
+          <div class="mb-4">
             <h1 class="">Login to Canvas</h1>
             <p>Follow the steps below to access your mySMCCD account.</p>
           </div>
 
           <div class="row mb-4">
             <div class="col-12 col-md-6">
-              <div class="d-flex align-items-center mb-4 gap-4">
-                <div class="circle d-flex justify-content-center align-items-center">1</div>
-                <h2 class="text-center m-0" style="font-size: 20px">Student</h2>
+              <div class="info-box">
+                <div class="d-flex align-items-center mb-4 gap-4">
+                  <div class="circle d-flex justify-content-center align-items-center">1</div>
+                  <h2 class="text-center m-0" style="font-size: 20px">Student</h2>
+                </div>
+                <ul>
+                  <li class="mb-4">Login with your username 'jdoe' (without @my.smccd.edu) and <span
+                    style="color: #012147; font-weight: 600">mySMCCD Portal Password</span>.
+                  </li>
+                  <li>If you are a new student and have not setup mySMCCD Portal Password, visit <a href="#">First time
+                    login tutorial page</a>.
+                  </li>
+                </ul>
               </div>
-              <ul>
-                <li class="mb-4">Login with your username 'jdoe' (without @my.smccd.edu) and <span
-                  style="color: #012147; font-weight: 600">mySMCCD Portal Password</span>.
-                </li>
-                <li>If you are a new student and have not setup mySMCCD Portal Password, visit <a href="#">First time
-                  login tutorial page</a>.
-                </li>
-              </ul>
             </div>
 
 
             <div class="col-12 col-md-6">
-              <div class="d-flex align-items-center mb-4 gap-4">
-                <div class="circle d-flex justify-content-center align-items-center">2</div>
-                <h2 class="text-center m-0" style="font-size: 20px">Faculty and Staff</h2>
+              <div class="info-box">
+                <div class="d-flex align-items-center mb-4 gap-4">
+                  <div class="circle d-flex justify-content-center align-items-center">2</div>
+                  <h2 class="text-center m-0" style="font-size: 20px">Faculty and Staff</h2>
+                </div>
+                <ul>
+                  <li class="mb-4">Login with your email username 'doej' (without @smccd.edu) and email password.</li>
+                  <li>
+                    If you forget your password contact your dean or contact us at smccdaccountsupport@smccd.edu. You
+                    may also contact the ITS Help Desk or by submitting a
+                    <a href="https://support.smccd.edu/support/home" target="_blank">Help Desk ticket</a>.
+                  </li>
+                </ul>
               </div>
-              <ul>
-                <li class="mb-4">Login with your email username 'doej' (without @smccd.edu) and email password.</li>
-                <li>
-                  If you forget your password contact your dean or contact us at smccdaccountsupport@smccd.edu. You
-                  may also contact the ITS Help Desk or by submitting a
-                  <a href="https://support.smccd.edu/support/home" target="_blank">Help Desk ticket</a>.
-                </li>
-              </ul>
             </div>
           </div>
 
-          <div class="d-flex flex-column align-items-center gap-4">
-            <div
-              style="background-color: #012147; border-radius: 12px; padding: 16px 32px; max-width: 400px;"
-              class="text-center"
-            >
-              <a
-                href="https://smccd.onelogin.com/login2/"
-                style="color: white; text-decoration: none; font-size: 24px; font-weight: 600;"
+          <div class="d-flex flex-column align-items-center gap-3 w-100 mt-5">
+            <div class="w-50">
+              <div
+                style="background-color: #012147; border-radius: 8px;"
+                class="text-center w-100 py-3 px-5"
               >
-                Login with mySMCCD
-              </a>
+                <a
+                  href="https://smccd.onelogin.com/login2/"
+                  style="color: white; text-decoration: none; font-size: 20px; font-weight: 600;"
+                >
+                  Login with mySMCCD
+                </a>
+              </div>
             </div>
 
-            <div class="d-flex align-items-center gap-4" style="max-width: 400px;">
-              <div class="col-12 sub-btn text-center flex-fill">Tutorial</div>
-              <div class="col-12 sub-btn text-center flex-fill">FAQ</div>
+            <div class="row g-3 w-50">
+              <div class="col-12 col-md-6 p-0 pe-md-2">
+                <div class="sub-btn text-center w-100" >Tutorial</div>
+              </div>
+
+              <div class="col-12 col-md-6 p-0 ps-md-2">
+                <div class="sub-btn text-center w-100" >FAQ</div>
+              </div>
             </div>
           </div>
 

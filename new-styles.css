@@ -11,14 +11,15 @@
 .login-box{
   border-radius: 12px;
   box-shadow: 1px 1px 15px rgba(1, 33, 71, 0.37);
-  padding: 24px;
 }
 
-.sub-btn{
-  border-radius: 8px;
+.info-box{
+  border-radius: 12px;
   box-shadow: 1px 1px 15px rgba(1, 33, 71, 0.37);
-  padding: 12px 24px;
+  padding: 16px;
+  height: 100%;
 }
+
 .masonry-grid {
   margin-top: 12px;
 }
