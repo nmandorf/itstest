@@ -198,7 +198,7 @@
       background: linear-gradient(
         135deg,
         rgb(239, 248, 255) 0%,
-        rgb(1, 33, 71) 50%,
+        rgb(1, 33, 71, .5) 50%,
         rgb(239, 248, 255) 100%
       );
 
@@ -219,7 +219,7 @@
       background: linear-gradient(
         to bottom,
         rgba(255, 255, 255, .1) 0%,
-        #ffffff 100%
+        #ffffff 75%
       );
     }
 
@@ -241,6 +241,10 @@
       .gradiant-animation {
         animation: none;
       }
+    }
+
+    .portal-title {
+      font-weight: 650;
     }
   </style>
 </head>
@@ -518,310 +522,189 @@
 
         <section class="lead-section mt-4">
           <div class="row ">
-            <div class="col-lg-6 portal-header">
+            <div class="col-lg-5 portal-header">
               <h1 class="portal-title">Student Portal</h1>
-              <h2 class="portal-subtitle">Web Services at Ca&ntilde;ada College, <br/> College of San Mateo, Skyline
-                College.</h2>
               <div class="institutions">
-                <div class="middle-line mb-3">San Mateo County Community College District</div>
-                <div class="row align-items-center">
-                  <div class="col-xs-12 col-sm-4"><a href="http://canadacollege.edu"><img
-                    src="https://my.smccd.edu/images/CanadaLogo_bar_color.png" alt="Cañada College Logo"></a>
+                <div class="middle-line mb-3">Sign in to email, registrer for classes, and get to Canvas.
+                  Every web service for Cañada College, College of San Mateo, and Skyline College, in one place.
+                </div>
+
+                <div class="portal-subtitle" style="font-size: 12px; font-weight: 600; opacity: 70%">SAN MATEO COUNTY
+                  COMMUNITY COLLEGE DISTRICT
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="row align-items-center col-6">
+            <div class="col-xs-12 col-sm-4"><a href="http://canadacollege.edu"><img
+              src="https://my.smccd.edu/images/CanadaLogo_bar_color.png" alt="Cañada College Logo"></a>
+            </div>
+            <div class="col-xs-12 col-sm-5"><a href="http://collegeofsanmateo.edu"><img
+              src="https://my.smccd.edu/images/CSM_Logo_color.png" alt="CSM Logo"></a></div>
+            <div class="col-xs-12 col-sm-3"><a href="http://skylinecollege.edu"><img
+              src="https://my.smccd.edu/images/Skyline_Logo_color.png" alt="Skyline College Logo"></a>
+            </div>
+          </div>
+
+          <div class="col-md-12 col-lg-5 col-lg-offset-1 hidden-xs" style="padding-top: 30px">
+          </div>
+
+        </section>
+
+        <section class="mb-5">
+          <h2>Quick Access</h2>
+
+          <div class="row masonry-grid" data-js="isotope" data-item-selector=".widget-block" data-layout-type="fitRows">
+
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
+              <div class="featured">
+
+                <div class="widget-block-content">
+                  <img src="images/Group 5.png" style="max-width: 48px; max-height: 48px; margin-bottom: 32px" alt="Student Email Logo"/>
+                  <header class="widget-block-header">
+                    <h2 class="widget-block-title">
+                      Student Email
+                    </h2>
+                  </header>
+
+                  <div class="widget-block-excerpt">
+                    All email sent from Ca&ntilde;ada, CSM and Skyline Colleges goes to your free District provided
+                    email
+                    address. Part of Google Apps for Education.
                   </div>
-                  <div class="col-xs-12 col-sm-5"><a href="http://collegeofsanmateo.edu"><img
-                    src="https://my.smccd.edu/images/CSM_Logo_color.png" alt="CSM Logo"></a></div>
-                  <div class="col-xs-12 col-sm-3"><a href="http://skylinecollege.edu"><img
-                    src="https://my.smccd.edu/images/Skyline_Logo_color.png" alt="Skyline College Logo"></a>
+
+                  <div class="widget-block-links">
+                    <div class="widget-block-links">
+                      <a href="http://mail.my.smccd.edu/" class="btn btn-block btn-success">
+                        Sign In to Email&nbsp;&nbsp;
+                        <span class="fa fa-lg fa-sign-in"></span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="col-md-12 col-lg-5 col-lg-offset-1 hidden-xs" style="padding-top: 30px">
+
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
+              <div class="featured">
+
+                <div class="widget-block-content">
+                  <img src="images/Group 3.png" style="max-width: 48px; max-height: 48px; margin-bottom: 32px" alt="Canvas Logo"/>
+                  <header class="widget-block-header">
+                    <h2 class="widget-block-title">
+                      Canvas
+                    </h2>
+                  </header>
+
+                  <div class="widget-block-excerpt">
+                    Learn online courses and access your course materials remotely from a new online learning system.
+                  </div>
+
+                  <div class="widget-block-links">
+                    <div class="widget-block-links">
+                      <a href="http://smccd.instructure.com/" class="btn btn-block btn-primary">
+                        Login to Canvas
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
+              <div class="featured">
+
+                <div class="widget-block-content">
+                  <img src="images/Group 4.png" style="max-width: 48px; max-height: 48px; margin-bottom: 32px" alt="WebSmart Logo"/>
+                  <header class="widget-block-header">
+                    <h2 class="widget-block-title">
+                      Websmart
+                    </h2>
+                  </header>
+
+                  <div class="widget-block-excerpt">
+                    A web resource for viewing college data. Students can register for classes, download transcripts,
+                    apply for financial aid and much more!
+                  </div>
+
+                  <div class="widget-block-links">
+                    <div class="widget-block-links">
+                      <a href="https://websmart.smccd.edu" class="btn btn-block btn-primary">
+                        Visit Websmart
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
 
-        <div class="row masonry-grid" data-js="isotope" data-item-selector=".widget-block" data-layout-type="fitRows">
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block csm sky can">
-            <div class="widget-block-inner">
-              <div class="widget-block-thumbnail">
-                <a href="http://mail.my.smccd.edu/" tabindex="-1" aria-hidden="true">
-                  <img src="https://my.smccd.edu/images/student_email.jpg" title="Student Email" alt="Large email icon">
-                </a>
-              </div>
 
-              <div class="widget-block-content">
-                <header class="widget-block-header">
-                  <h2 class="widget-block-title">
-                    <a href="http://mail.my.smccd.edu/">Student Email</a>
-                  </h2>
-                </header>
+        <section>
+          <h2>More services</h2>
 
-                <div class="widget-block-excerpt">
-                  All email sent from Ca&ntilde;ada, CSM and Skyline Colleges goes to your free District provided email
-                  address. Part of Google Apps for Education.
+          <div class="row">
+            <div class="col-6 col-lg-4 col-xl-4 mb-4">
+              <a href="#" class="not-featured">
+                <img src="https://smccd.edu/its-1/img/icons/Background.svg" alt="WebSchedule"
+                     style="height:48px; width:48px">
+                <div>
+                  <h3 class="my-1" style="font-size: 16px; font-weight: 600">WebSchedule</h3>
+                  <p>Search course schedules and get notifications when new classes post.</p>
                 </div>
-
-                <div class="widget-block-links">
-<!--                  <p>-->
-<!--                    <a href="http://smccd.edu/studenttutorials/faqs.php" class="btn btn-primary"-->
-<!--                       style="padding: 6px 7px; margin: 1px 0;">-->
-<!--                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;-->
-<!--                      FAQs-->
-<!--                    </a>-->
-<!--                    <a href="http://smccd.edu/studenttutorials/tutorials.php" class="btn btn btn-info"-->
-<!--                       style="padding: 6px 7px; margin: 1px 0;">-->
-<!--                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;-->
-<!--                      Tutorials-->
-<!--                    </a>-->
-<!--                    <a href="http://smccd.edu/studenttutorials/index.php" class="btn btn btn-default"-->
-<!--                       style="padding: 6px 7px; margin: 1px 0;">-->
-<!--                      <span class="fa fa-info-circle"></span>&nbsp;&nbsp;-->
-<!--                      Support-->
-<!--                    </a>-->
-<!--                    &lt;!&ndash;-->
-<!--                    <a href="https://reset.smccd.edu" class="btn btn btn-danger" style="padding: 6px 7px; margin: 1px 0;">-->
-<!--                      <span class="fa fa-refresh"></span>-->
-<!--                      Reset Password-->
-<!--                    </a>-->
-<!--                    &ndash;&gt;-->
-<!--                  </p>-->
-
-                  <div class="widget-block-links">
-                    <a href="http://mail.my.smccd.edu/" title="Sign In to Email" class="btn btn-block btn-success">
-                      Sign In to Email&nbsp;&nbsp;
-                      <span class="fa fa-lg fa-sign-in"></span>
-                    </a>
-                  </div>
-                </div>
-              </div>
+                <img src="images/rightArrow.png" alt="right arrow" style="height: 24px; width: 24px"/></a>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
-            <div class="widget-block-inner">
-              <div class="widget-block-thumbnail">
-                <a href="https://websmart.smccd.edu" title="Visit WebSMART" tabindex="-1" aria-hidden="true">
-                  <img src="images/websmart.jpg" alt="WebSMART Screenshot">
-                </a>
-              </div>
-
-              <div class="widget-block-content">
-                <header class="widget-block-header">
-                  <h2 class="widget-block-title">
-                    <a href="https://websmart.smccd.edu" title="Visit WebSMART">WebSMART</a>
-                  </h2>
-                </header>
-
-                <div class="widget-block-excerpt">
-                  A web resource for viewing college data. Students can register for classes, download transcripts,
-                  apply for financial aid and much more!
+            <div class="col-6 col-lg-4 col-xl-4 mb-4">
+              <a href="#" class="not-featured">
+                <img src="https://smccd.edu/its-1/img/icons/Background.svg" alt="AlertU"
+                     style="height:48px; width:48px">
+                <div>
+                  <h3 class="my-1" style="font-size: 16px; font-weight: 600">AlertU</h3>
+                  <p>Search course schedules and get notifications when new classes post.</p>
                 </div>
-
-                <div class="widget-block-links">
-                  <a href="https://websmart.smccd.edu" title="Visit WebSMART" class="btn btn-block btn-primary">
-                    Visit WebSMART&nbsp;&nbsp;
-                    <span class="fa fa-angle-right"></span>
-                  </a>
-                </div>
-              </div>
+                <img src="images/rightArrow.png" alt="right arrow" style="height: 24px; width: 24px"/></a>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
-            <div class="widget-block-inner">
-              <div class="widget-block-thumbnail">
-                <a href="https://webschedule.smccd.edu" title="#" tabindex="-1" aria-hidden="true">
-                  <img src="images/webschedule.jpg" alt="WebSchedule Screenshot">
-                </a>
-              </div>
-
-              <div class="widget-block-content">
-                <header class="widget-block-header">
-                  <h2 class="widget-block-title">
-                    <a href="https://webschedule.smccd.edu" title="Find classes in WebSchedule">WebSchedule</a>
-                  </h2>
-                </header>
-
-                <div class="widget-block-excerpt">
-                  Search through our schedule of college courses and sign up to be notified when we post the latest
-                  semester of classes.
+            <div class="col-6 col-lg-4 col-xl-4 mb-4">
+              <a href="#" class="not-featured">
+                <img src="https://smccd.edu/its-1/img/icons/Background.svg" alt="Faculty Office Hours"
+                     style="height:48px; width:48px">
+                <div>
+                  <h3 class="my-1" style="font-size: 16px; font-weight: 600">Faculty Office Hours</h3>
+                  <p>Search course schedules and get notifications when new classes post.</p>
                 </div>
-
-                <div class="widget-block-links">
-                  <a href="https://webschedule.smccd.edu" title="Find classes in WebSchedule"
-                     class="btn btn-block btn-primary">
-                    Find classes&nbsp;&nbsp;
-                    <span class="fa fa-angle-right"></span>
-                  </a>
-                </div>
-              </div>
+                <img src="images/rightArrow.png" alt="right arrow" style="height: 24px; width: 24px"/></a>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
-            <div class="widget-block-inner">
-              <div class="widget-block-thumbnail">
-                <a href="http://smccd.instructure.com/" title="Visit Canvas" tabindex="-1" aria-hidden="true">
-                  <img src="https://my.smccd.edu/images/canvas.png" alt="Canvas Logo">
-                </a>
-              </div>
-
-              <div class="widget-block-content">
-                <header class="widget-block-header">
-                  <h2 class="widget-block-title">
-                    <a href="http://smccd.instructure.com/">Canvas</a>
-                  </h2>
-                </header>
-
-                <div class="widget-block-excerpt">
-                  Learn online courses and access your course materials remotely from a new online learning system.
+            <div class="col-6 col-lg-4 col-xl-4 mb-4">
+              <a href="#" class="not-featured">
+                <img src="https://smccd.edu/its-1/img/icons/Background.svg" alt="Google Apps"
+                     style="height:48px; width:48px">
+                <div>
+                  <h3 class="my-1" style="font-size: 16px; font-weight: 600">Google Apps</h3>
+                  <p>Search course schedules and get notifications when new classes post.</p>
                 </div>
-
-                <div class="widget-block-links">
-                  <a href="http://smccd.instructure.com/" title="Read More" class="btn btn-block btn-primary">
-                    Visit Canvas&nbsp;&nbsp;
-                    <span class="fa fa-angle-right"></span>
-                  </a>
-                </div>
-              </div>
+                <img src="images/rightArrow.png" alt="right arrow" style="height: 24px; width: 24px"/></a>
             </div>
-          </div>
 
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
-            <div class="widget-block-inner">
-              <div class="widget-block-thumbnail">
-                <a href="https://www.smccd.edu/alertu/" title="AlertU" tabindex="-1" aria-hidden="true">
-                  <img src="images/alertu2.jpg" alt="AlertU Website Screenshot">
-                </a>
-              </div>
-
-              <div class="widget-block-content">
-                <header class="widget-block-header">
-                  <h2 class="widget-block-title">
-                    <a href="https://www.smccd.edu/alertu/">AlertU</a>
-                  </h2>
-                </header>
-
-                <div class="widget-block-excerpt">
-                  AlertU enables District Public Safety to send emergency information by text messages to cell phones
-                  on a FREE subscription basis.
+            <div class="col-6 col-lg-4 col-xl-4 mb-4">
+              <a href="#" class="not-featured">
+                <img src="https://smccd.edu/its-1/img/icons/Background.svg" alt="Microsoft Office"
+                     style="height:48px; width:48px">
+                <div>
+                  <h3 class="my-1" style="font-size: 16px; font-weight: 600">Microsoft Office</h3>
+                  <p>Search course schedules and get notifications when new classes post.</p>
                 </div>
-
-                <div class="widget-block-links">
-                  <a href="https://www.smccd.edu/alertu/" class="btn btn-block btn-primary">
-                    Visit AlertU&nbsp;&nbsp;
-                    <span class="fa fa-angle-right"></span>
-                  </a>
-                </div>
-              </div>
+                <img src="images/rightArrow.png" alt="right arrow" style="height: 24px; width: 24px"/></a>
             </div>
+
           </div>
-
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
-            <div class="widget-block-inner">
-              <div class="widget-block-thumbnail">
-                <a href="https://smccd.edu/doorcard" title="Find Office Hours" tabindex="-1" aria-hidden="true">
-                  <img src="https://my.smccd.edu/images/doorcard.jpg" alt="Doorcard Logo">
-                </a>
-              </div>
-
-              <div class="widget-block-content">
-                <header class="widget-block-header">
-                  <h2 class="widget-block-title">
-                    <a href="https://smccd.edu/doorcard">Faculty Office Hours</a>
-                  </h2>
-                </header>
-
-                <div class="widget-block-excerpt">
-                  Find out when your instructor is available for one-on-one assistance.
-                </div>
-
-                <div class="widget-block-links">
-                  <a href="https://smccd.edu/doorcard" title="Find Office Hours" class="btn btn-block btn-primary">
-                    Find Office Hours&nbsp;&nbsp;
-                    <span class="fa fa-angle-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
-            <div class="widget-block-inner">
-              <div class="widget-block-thumbnail">
-                <a href="http://drive.google.com/" title="Read More about Google Docs integration" tabindex="-1"
-                   aria-hidden="true">
-                  <img src="https://my.smccd.edu/images/google-apps.jpg" alt="Google Docs logo">
-                </a>
-              </div>
-
-              <div class="widget-block-content">
-                <header class="widget-block-header">
-                  <h2 class="widget-block-title">
-                    <a href="http://mail.my.smccd.edu/" title="Read More about Google Docs integration">Google Apps</a>
-                  </h2>
-                </header>
-
-                <div class="widget-block-excerpt">
-                  Allows you to create documents, forms, spreadsheets and presentations without needing MS Office.
-                </div>
-
-                <div class="widget-block-links">
-                  <a href="http://drive.google.com/" title="Read More about Google Docs integration"
-                     class="btn btn-block btn-primary">
-                    Read More about Google Apps&nbsp;&nbsp;
-                    <span class="fa fa-angle-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 widget-block">
-            <div class="widget-block-inner">
-              <div class="widget-block-thumbnail">
-                <a href="https://smccd.edu/student-tutorials/office365/" title="Read More about Google Docs integration"
-                   tabindex="-1"
-                   aria-hidden="true">
-                  <img src="https://my.smccd.edu/images/ms_office_logos.jpg" alt="Microsoft Office Suite logo">
-                </a>
-              </div>
-
-              <div class="widget-block-content">
-                <header class="widget-block-header">
-                  <h2 class="widget-block-title">
-                    <a
-                      href="https://smccd.edu/student-tutorials/office365/"
-                      title="Read More about free Microsoft Office for students"
-                      target="_blank"
-                    >Microsoft Office for free</a>
-                  </h2>
-                </header>
-
-                <div class="widget-block-excerpt">
-                  Microsoft offers a <strong>free copy of Microsoft Office </strong>to students.
-                  <p style="margin-top: 8px;">
-                    Note: Microsoft automatically removes all files stored in your EDU O365 or OneDrive if you are no
-                    longer enrolled. We strongly recommend backing up any files separately.
-                  </p>
-                </div>
-
-                <div class="widget-block-links">
-                  <a
-                    href="https://smccd.edu/student-tutorials/office365/"
-                    class="btn btn-block btn-primary"
-                    title="Microsoft office for students sign up"
-                    target="_blank"
-                  >
-                    Sign in Instructions&nbsp;&nbsp;
-                    <span class="fa fa-angle-right"></span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </section>
       </div>
     </div>
 
@@ -877,8 +760,6 @@
         href="http://www.smccd.edu" target="blank">SMCCCD</a> — All rights reserved.</span></div>
     </section>
   </footer>
-
-
 </div>
 
 <script>
