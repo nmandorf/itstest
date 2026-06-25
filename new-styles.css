@@ -15,6 +15,7 @@
   display: flex;
   align-items: center;
   padding: 20px;
+  height: 100%;
   border: 1px solid #e2e8f0;
   border-radius: 8px;
   box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
