@@ -36,7 +36,7 @@ export const widgets = [
     imageAlt: "WebSchedule",
     description: "Search current and upcoming class schedules.",
     buttonText: "Open WebSchedule",
-    buttonUrl: "#"
+    buttonUrl: "https://webschedule.smccd.edu/"
   },
   {
     title: "AlertU",
@@ -45,7 +45,7 @@ export const widgets = [
     imageAlt: "AlertU",
     description: "Get emergency alerts and campus safety updates.",
     buttonText: "Open AlertU",
-    buttonUrl: "#"
+    buttonUrl: "https://smccd.edu/alertme/"
   },
   {
     title: "Faculty Office Hours",
@@ -54,7 +54,7 @@ export const widgets = [
     imageAlt: "Faculty Office Hours",
     description: "Find instructor office hours and contact details.",
     buttonText: "Open Faculty Office Hours",
-    buttonUrl: "#"
+    buttonUrl: "https://doorcard.smccd.edu/"
   },
   {
     title: "Google Apps",
@@ -63,7 +63,7 @@ export const widgets = [
     imageAlt: "Google Apps",
     description: "Access District Google tools and apps.",
     buttonText: "Open Google Apps",
-    buttonUrl: "#"
+    buttonUrl: "https://drive.google.com/drive/u/0/"
   },
   {
     title: "Microsoft Office",
@@ -72,6 +72,6 @@ export const widgets = [
     imageAlt: "Microsoft Office",
     description: "Use Microsoft Office tools online.",
     buttonText: "Open Microsoft Office",
-    buttonUrl: "#"
+    buttonUrl: "https://smccd.edu/student-tutorials/office365/"
   }
 ];
