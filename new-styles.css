@@ -2271,4 +2271,120 @@ p.color-grey a:hover {
   }
 }
 
+/* Shared help resources below the portal's service cards. */
+.portal-help {
+  margin-top: 24px;
+  padding: 32px;
+  color: #012147;
+  background: #f7f9fc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+}
 
+.portal-help h2 {
+  margin: 0 0 8px;
+}
+
+.portal-help .portal-help-intro {
+  margin: 0 0 28px;
+  color: #475569;
+}
+
+.portal-help-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.portal-help-group {
+  min-width: 0;
+  padding: 0 24px;
+}
+
+.portal-help-group:first-child {
+  padding-left: 0;
+}
+
+.portal-help-group:last-child {
+  padding-right: 0;
+}
+
+.portal-help-group + .portal-help-group {
+  border-left: 1px solid #dce3ec;
+}
+
+.portal-help-group h3 {
+  margin: 0 0 10px;
+  color: #012147;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.portal-help-group p {
+  margin: 0 0 12px;
+  color: #475569;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.portal-help .portal-help-links {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.portal-help-links li {
+  margin: 0;
+  padding: 0;
+}
+
+.portal-help-links li::before {
+  content: none;
+}
+
+.portal-help-links a {
+  display: inline-block;
+  padding: 8px 0;
+  color: #012147;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.portal-help-links a span {
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.portal-help-links a:hover {
+  color: #005a8c;
+}
+
+.portal-help-links a:focus-visible {
+  outline: 2px solid #005a8c;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+@media (max-width: 767px) {
+  .portal-help {
+    padding: 24px 20px;
+  }
+
+  .portal-help-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .portal-help-group {
+    padding: 0;
+  }
+
+  .portal-help-group + .portal-help-group {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dce3ec;
+    border-left: 0;
+  }
+}
