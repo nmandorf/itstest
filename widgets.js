@@ -32,18 +32,18 @@ export const widgets = [
   {
     title: "WebSchedule",
     feature: false,
-    image: "./images/WebSchedule.svg",
+    image: "./images/webSchedule.svg",
     imageAlt: "WebSchedule",
-    description: "Search current and upcoming class schedules.",
+    description: "Search current and upcoming class schedules to find the courses you need.",
     buttonText: "Open WebSchedule",
-    buttonUrl: "https://webschedule.smccd.edu/"
+    buttonUrl: "https://phx-ban-apps.smccd.edu/StudentRegistrationSsb/ssb/term/termSelection?mode=search"
   },
   {
     title: "AlertU",
     feature: false,
     image: "./images/alertU.svg",
     imageAlt: "AlertU",
-    description: "Get emergency alerts and campus safety updates.",
+    description: "Receive emergency alerts and campus safety updates by text message.",
     buttonText: "Open AlertU",
     buttonUrl: "https://smccd.edu/alertme/"
   },
@@ -52,7 +52,7 @@ export const widgets = [
     feature: false,
     image: "./images/officeHours.svg",
     imageAlt: "Faculty Office Hours",
-    description: "Find instructor office hours and contact details.",
+    description: "Find your instructors' office hours and contact information for one-on-one help.",
     buttonText: "Open Faculty Office Hours",
     buttonUrl: "https://doorcard.smccd.edu/"
   },
@@ -61,17 +61,35 @@ export const widgets = [
     feature: false,
     image: "./images/googleApps.svg",
     imageAlt: "Google Apps",
-    description: "Access District Google tools and apps.",
+    description: "Create and share documents, spreadsheets, and presentations with your student Google account.",
     buttonText: "Open Google Apps",
-    buttonUrl: "https://drive.google.com/drive/u/0/"
+    buttonUrl: "http://drive.google.com/"
   },
   {
     title: "Microsoft Office",
     feature: false,
     image: "./images/microsoftOffice.svg",
     imageAlt: "Microsoft Office",
-    description: "Use Microsoft Office tools online.",
+    description: "Access Word, Excel, PowerPoint, and other Microsoft tools with your student account.",
     buttonText: "Open Microsoft Office",
-    buttonUrl: "https://smccd.edu/student-tutorials/office365/"
+    buttonUrl: "https://m365.cloud.microsoft/chat"
+  },
+  {
+    title: "Student Success Link",
+    feature: false,
+    image: "./images/studentSuccessLink.svg",
+    imageAlt: "Student Success Link",
+    description: "Connect with your Success Team, schedule appointments, and access student support resources.",
+    buttonText: "Open Student Success Link",
+    buttonUrl: "https://smccd.onelogin.com/"
+  },
+  {
+    title: "Degree Works",
+    feature: false,
+    image: "./images/degreeWorks.svg",
+    imageAlt: "Degree Works",
+    description: "Track your degree progress and see which courses you still need to complete.",
+    buttonText: "Open Degree Works",
+    buttonUrl: "https://my.smccd.edu/degreeworks/"
   }
 ];
