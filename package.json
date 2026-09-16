@@ -3,9 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nmandorf/itstest.git"
@@ -17,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/nmandorf/itstest/issues"
   },
-  "homepage": "https://github.com/nmandorf/itstest#readme"
+  "homepage": "https://github.com/nmandorf/itstest#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.20.3"
+  }
 }
