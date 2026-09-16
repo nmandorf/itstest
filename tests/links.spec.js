@@ -87,20 +87,22 @@ test('index links navigate to working pages', async ({ page, context }, testInfo
         ]);
         await destination.waitForLoadState('domcontentloaded', { timeout: NAVIGATION_TIMEOUT });
 
-        const documentResponse = responses
-          .filter(item => item.frame() === destination.mainFrame())
-          .at(-1);
+        const documentResponses = responses
+          .filter(item => item.frame() === destination.mainFrame());
+        const documentResponse = documentResponses.at(-1);
         expect(documentResponse, 'Click must load an HTML document; this test is for static pages').toBeTruthy();
         expect(documentResponse.ok(), `${destination.url()} returned HTTP ${documentResponse.status()}`).toBeTruthy();
         expect(documentResponse.headers()['content-type'] || '', 'Destination must be an HTML page')
           .toMatch(/text\/html|application\/xhtml\+xml/i);
 
-        // Follow legitimate HTTP redirects, but catch a click handler going to an unrelated URL.
-        const requestedUrls = [];
-        for (let request = documentResponse.request(); request; request = request.redirectedFrom()) {
-          requestedUrls.push(withoutHash(request.url()));
+        // Login pages can redirect with JavaScript or HTML, starting a new HTTP chain.
+        // Check where the entire navigation STARTED, not just the final redirect chain.
+        let firstRequest = documentResponses[0].request();
+        while (firstRequest.redirectedFrom()) {
+          firstRequest = firstRequest.redirectedFrom();
         }
-        expect(requestedUrls, 'Navigation must follow the link href').toContain(withoutHash(link.url));
+        expect(withoutHash(firstRequest.url()), 'Navigation must start at the link href')
+          .toBe(withoutHash(link.url));
         expect(documentAddress(destination.url()), 'Link must leave the index page')
           .not.toBe(documentAddress(indexUrl));
         await expect(destination.locator('body')).toBeVisible();
