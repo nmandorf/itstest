@@ -76,6 +76,18 @@
   <style>
     main#content {
       display: block;
+      position: relative;
+      z-index: 0;
+      top: -25px;
+    }
+
+    .gradient-animation.portal-gradient {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 404px;
+      z-index: -1;
     }
 
     .widget-block-thumbnail img {
@@ -441,7 +453,7 @@
 
 
   <main id="content">
-    <div style="position: absolute;top: 0;height: 638px;width: 100%;z-index: -1" class="gradient-animation" aria-hidden="true"></div>
+    <div class="gradient-animation portal-gradient" aria-hidden="true"></div>
 
 
     <div class="container container-xl">
@@ -480,9 +492,7 @@
         <section class="mb-5">
           <h2>Quick Access</h2>
 
-          <div class="row" id="quick-access-card">
-
-          </div>
+          <div class="row" id="quick-access-card"></div>
         </section>
 
 
