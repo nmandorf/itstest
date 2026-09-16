@@ -76,20 +76,7 @@
   <style>
     main#content {
       display: block;
-      position: relative;
-      z-index: 0;
-      top: -25px;
     }
-
-    .gradient-animation.portal-gradient {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 404px;
-      z-index: -1;
-    }
-
     .widget-block-thumbnail img {
       display: block;
       width: 100%;
@@ -173,58 +160,6 @@
     .portal-header h1,
     .portal-header h2 {
       color: #012147 !important;
-    }
-
-    .gradient-animation {
-      position: relative;
-      overflow: hidden;
-
-      background: linear-gradient(
-        135deg,
-        rgb(239, 248, 255) 0%,
-        rgb(1, 33, 71, .5) 50%,
-        rgb(239, 248, 255) 100%
-      );
-
-      background-size: 220% 220%;
-      animation: professionalGradientShift 20s ease-in-out infinite;
-    }
-
-    .gradient-animation::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-
-      height: 100%;
-      pointer-events: none;
-
-      background: linear-gradient(
-        to bottom,
-        rgba(255, 255, 255, .1) 0%,
-        #ffffff 75%
-      );
-    }
-
-    @keyframes professionalGradientShift {
-      0% {
-        background-position: 0 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0 50%;
-      }
-    }
-
-    @media (prefers-reduced-motion: reduce) {
-      .gradient-animation {
-        animation: none;
-      }
     }
 
     .portal-title {
@@ -372,7 +307,7 @@
       <div class="container">
         <a class="navbar-brand" href="https://my.smccd.edu/">
           <img
-            src="https://smccd.edu/theme/smcccd-2022/images/SMCCCD_Horizontal_Blue.svg"
+            src="/theme/smcccd-2022/images/SMCCCD_Horizontal_Blue.svg"
             alt="SMCCCD San Mateo County Community College District">
         </a>
 
@@ -453,13 +388,11 @@
 
 
   <main id="content">
-    <div class="gradient-animation portal-gradient" aria-hidden="true"></div>
-
 
     <div class="container container-xl">
       <div id="MainContent">
 
-        <section class="lead-section mt-4">
+        <section class="lead-section">
           <div class="row ">
             <div class="col-lg-5 portal-header">
               <h1 class="portal-title">Student Portal</h1>
