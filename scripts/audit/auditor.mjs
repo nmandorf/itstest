@@ -381,10 +381,12 @@ export async function auditUrl(inputUrl, options = {}) {
       const overflow = await page.evaluate((selector) => {
         const contentSection = document.querySelector(selector);
         if (!contentSection) return { rootOverflow: 0, offenders: [] };
-        const sectionRect = contentSection.getBoundingClientRect();
-        const visibleLeft = Math.max(0, sectionRect.left);
-        const visibleRight = Math.min(window.innerWidth, sectionRect.right);
-        const rootOverflow = Math.max(0, contentSection.scrollWidth - contentSection.clientWidth, sectionRect.right - window.innerWidth, -sectionRect.left);
+        const visibleLeft = 0;
+        const visibleRight = document.documentElement.clientWidth;
+        const rootOverflow = Math.max(
+          0,
+          document.documentElement.scrollWidth - visibleRight
+        );
         const offenders = [...contentSection.querySelectorAll('*')].filter((element) => {
           const style = getComputedStyle(element);
           if (style.position === 'fixed' || style.position === 'absolute') return false;
