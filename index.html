@@ -238,7 +238,7 @@
   <!-- End Google Tag Manager (noscript) -->
 
   <div
-    id="emergency"
+    id="emergency" aria-live="assertive" aria-atomic="true"
     data-smccd-emergency
     data-site-location="smccd-edu"
     data-url="https://emergency.smccd.info/wp-json/wp/v2/"
@@ -247,7 +247,7 @@
   </div>
 
   <div
-    id="announcements"
+    id="announcements" aria-live="polite" aria-atomic="true"
     style="background-color: #fff"
     data-smccd-notifications
     data-site-location="smccd-edu"
@@ -271,7 +271,7 @@
                 Change Site
               </button>
 
-              <ul class="dropdown-menu">
+              <ul class="dropdown-menu" aria-label="College and district sites">
                 <li><a class="dropdown-item" href="https://websmart.smccd.edu">WebSMART</a></li>
                 <li><a class="dropdown-item" href="https://my.smccd.edu//canvas">Canvas</a></li>
                 <li><a class="dropdown-item" href="https://my.smccd.edu">My.SMCCD</a></li>
@@ -328,7 +328,7 @@
           </div>
 
           <div class="top-bar__item-search">
-            <form style="margin: 0; padding: 0" role="form" action="https://my.smccd.edu/search/index.php">
+            <form style="margin: 0; padding: 0" role="form" aria-label="Site search" action="https://my.smccd.edu/search/index.php">
               <input name="cx" type="hidden" value="001343176506729611594:dxf40qjualg">
               <input name="cof" type="hidden" value="FORID:11">
               <input name="ie" type="hidden" value="UTF-8">
@@ -355,7 +355,7 @@
     </div>
 
     <!-- Main Navigation -->
-    <nav class="sitenav navbar navbar-expand-lg navbar-light">
+    <nav class="sitenav navbar navbar-expand-lg navbar-light" aria-label="Primary">
       <div class="container">
         <a class="navbar-brand" href="https://my.smccd.edu/">
           <img
@@ -371,7 +371,7 @@
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
         </button>
 
         <div id="navbarNavDropdown" class="collapse navbar-collapse flex-grow-0">
@@ -440,7 +440,7 @@
 
 
   <main id="content">
-    <div style="position: absolute;top: 0;height: 638px;width: 100%;z-index: -1" class="gradient-animation"></div>
+    <div style="position: absolute;top: 0;height: 638px;width: 100%;z-index: -1" class="gradient-animation" aria-hidden="true"></div>
 
 
     <div class="container container-xl">
@@ -662,7 +662,7 @@
       link: 'http://mail.my.smccd.edu/',
       image: 'images/studentEmail.png',
       btnStyle: 'btn w-100 btn-success',
-      btnText: 'Sign In to Email <span class="fa fa-lg fa-sign-in"></span>',
+      btnText: 'Sign In to Email <span class="fa fa-lg fa-sign-in" aria-hidden="true"></span>',
     },
     {
       title: 'Canvas',

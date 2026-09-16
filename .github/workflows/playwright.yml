@@ -1,27 +1,61 @@
-name: Playwright Tests
+name: Website checks
 on:
   push:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
+
+permissions:
+  contents: read
+
 jobs:
+  # Keep the existing job ID so a required "test" check retains its name.
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
-    - uses: actions/setup-node@v4
-      with:
-        node-version: lts/*
-    - name: Install dependencies
-      run: npm ci
-    - name: Install Playwright Browsers
-      run: npx playwright install --with-deps
-    - name: Run Playwright tests
-      run: npx playwright test
-    - uses: actions/upload-artifact@v4
-      if: ${{ !cancelled() }}
-      with:
-        name: playwright-report
-        path: playwright-report/
-        retention-days: 30
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Install Playwright Browsers
+        run: npx playwright install --with-deps
+      - name: Run Playwright tests
+        run: npx playwright test
+      - uses: actions/upload-artifact@v7
+        if: ${{ !cancelled() }}
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 30
+
+  # No "needs: test": the audit runs independently alongside Playwright.
+  audit:
+    name: Website audit
+    timeout-minutes: 15
+    runs-on: ubuntu-latest
+    env:
+      AUDIT_PATH: /index.html
+      AUDIT_CONTENT_SELECTOR: '#MainContent'
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Install dependencies
+        run: npm ci
+      - name: Install audit browser
+        run: npx playwright install --with-deps chromium
+      - name: Run content, accessibility, and layout checks
+        run: npm run audit:ci
+      - name: Upload audit report
+        if: ${{ !cancelled() }}
+        uses: actions/upload-artifact@v7
+        with:
+          name: website-audit-report
+          path: audit-report/
+          retention-days: 30
