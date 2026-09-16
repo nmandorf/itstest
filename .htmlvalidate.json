@@ -1,0 +1,11 @@
+{
+  "root": true,
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "no-conditional-comment": "warn",
+    "no-inline-style": "warn",
+    "no-redundant-role": "warn",
+    "prefer-native-element": "warn",
+    "void-style": "warn"
+  }
+}
