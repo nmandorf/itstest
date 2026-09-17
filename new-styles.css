@@ -144,17 +144,17 @@
 }
 
 
-@charset "UTF-8";
-@import url(css-style/vendors/bootstrap.min.css);
-@import url(css-style/vendors/slick.css);
+/*@charset "UTF-8";*/
+/*!*@import url(css-style/vendors/bootstrap.min.css);*!*/
+/*!*@import url(css-style/vendors/slick.css);*!*/
 
-body.employsideex .smccd-sidebar .left-menu ul,
-body.employsideex .smccd-sidebar .left-menu li{padding:0;}
-body.employsideex .smccd-sidebar .left-menu ul li::before {content:unset;}
-body.employsideex .smccd-sidebar .left-menu ul li{margin-bottom: 0px;}
-body.employsideex .smccd-sidebar .left-menu ul li a{display:block;width:auto;padding:10px 10px 10px 15px;border-color:#949494;font-size: 17.93px;border-bottom: 1px solid #949494;}
-body.employsideex .smccd-sidebar .left-menu ul li a.active{background: #003365;border-radius: 8px;color: #fff;}
-body.employsideex .smccd-sidebar .left-menu ul li a::before{background: none;}
+/*body.employsideex .smccd-sidebar .left-menu ul,*/
+/*body.employsideex .smccd-sidebar .left-menu li{padding:0;}*/
+/*body.employsideex .smccd-sidebar .left-menu ul li::before {content:unset;}*/
+/*body.employsideex .smccd-sidebar .left-menu ul li{margin-bottom: 0px;}*/
+/*body.employsideex .smccd-sidebar .left-menu ul li a{display:block;width:auto;padding:10px 10px 10px 15px;border-color:#949494;font-size: 17.93px;border-bottom: 1px solid #949494;}*/
+/*body.employsideex .smccd-sidebar .left-menu ul li a.active{background: #003365;border-radius: 8px;color: #fff;}*/
+/*body.employsideex .smccd-sidebar .left-menu ul li a::before{background: none;}*/
 
 body #alert{display:none;}
 body.gracstick #alert,body.gracalert #alert{display:block;position: absolute;width: 100%;top: 0;left: 0;}
@@ -815,55 +815,55 @@ a {
   Helvetica,
   Arial,
   sans-serif;
-  src:url("../fonts/OpenSans-Bold.eot");
-  src:url("../fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/OpenSans-Bold.woff2") format("woff2"),
-  url("../fonts/OpenSans-Bold.woff") format("woff"),
-  url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  src:url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Bold.eot");
+  src:url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Bold.eot?#iefix") format("embedded-opentype"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Bold.woff2") format("woff2"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Bold.woff") format("woff"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Bold.ttf") format("truetype");
   font-weight:700;
   font-style:normal;
   font-display:swap
 }
 @font-face {
   font-family:OpenSans-Regular;
-  src:url("../fonts/OpenSans.eot");
-  src:url("../fonts/OpenSans.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/OpenSans.woff2") format("woff2"),
-  url("../fonts/OpenSans.woff") format("woff"),
-  url("../fonts/OpenSans.ttf") format("truetype");
+  src:url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans.eot");
+  src:url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans.eot?#iefix") format("embedded-opentype"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans.woff2") format("woff2"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans.woff") format("woff"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans.ttf") format("truetype");
   font-weight:400;
   font-style:normal;
   font-display:swap
 }
 @font-face {
   font-family:OpenSans-Light;
-  src:url("../fonts/OpenSans-Light.eot");
-  src:url("../fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/OpenSans-Light.woff2") format("woff2"),
-  url("../fonts/OpenSans-Light.woff") format("woff"),
-  url("../fonts/OpenSans-Light.ttf") format("truetype");
+  src:url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Light.eot");
+  src:url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Light.eot?#iefix") format("embedded-opentype"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Light.woff2") format("woff2"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Light.woff") format("woff"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Light.ttf") format("truetype");
   font-weight:300;
   font-style:normal;
   font-display:swap
 }
 @font-face {
   font-family:OpenSans-Semibold;
-  src:url("../fonts/OpenSans-Semibold.eot");
-  src:url("../fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"),
-  url("../fonts/OpenSans-Semibold.woff2") format("woff2"),
-  url("../fonts/OpenSans-Semibold.woff") format("woff"),
-  url("../fonts/OpenSans-Semibold.ttf") format("truetype");
+  src:url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Semibold.eot");
+  src:url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Semibold.eot?#iefix") format("embedded-opentype"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Semibold.woff2") format("woff2"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Semibold.woff") format("woff"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/OpenSans-Semibold.ttf") format("truetype");
   font-weight:600;
   font-style:normal;
   font-display:swap
 }
 @font-face {
   font-family:MyriadPro-Regular;
-  src:url("../fonts/MyriadPro-Regular.woff2") format("woff2"),
-  url("../fonts/MyriadPro-Regular.woff") format("woff"),
-  url("../fonts/MyriadPro-Regular.ttf") format("truetype"),
-  url("../fonts/MyriadPro-Regular.eot") format("embedded-opentype"),
-  url("../fonts/MyriadPro-Regular.svg") format("svg");
+  src:url("https://smccd.edu/theme/smcccd-2022/fonts/MyriadPro-Regular.woff2") format("woff2"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/MyriadPro-Regular.woff") format("woff"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/MyriadPro-Regular.ttf") format("truetype"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/MyriadPro-Regular.eot") format("embedded-opentype"),
+  url("https://smccd.edu/theme/smcccd-2022/fonts/MyriadPro-Regular.svg") format("svg");
   font-weight:400;
   font-style:normal
 }
